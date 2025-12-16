@@ -1,0 +1,54 @@
+---
+input: 
+  adls-theme/frontmatter-adls.md: {noYAML: false, doctoc: false}
+  modules/m1-introduction/introduction.md: {replace: {"\\[#\\]": 1}}
+  modules/m2-access_control/access_control.md: {replace: {"\\[#\\]": 2}}
+noYAML: true
+doctoc: true
+replace:
+  <!--{timestamp}-->: 11/27/2025
+  <!--{copyrightYear}-->: 2025
+  <!--{returnToMainTOC}-->: "[Return to Course Contents](#course-contents)"
+  <!--{courseType}-->: "Activity Guide"
+  <!--{courseTitle}-->: "Assets Power User Update – Assets View"
+  <!--{courseCreator}-->: "Adobe Digital Learning Services"
+  <!--{author}-->: "Rob Freeman"
+  ({#(.*?)}): ""
+  \[!NOTE\]: "NOTE:"
+  \[!CAUTION\]: "CAUTION:"
+  \[!WARNING\]: "WARNING:"
+  "!UICONTROL ": ""
+  "!DNL ": ""
+  "!VIDEO": "Video Link"
+output:
+  name: merged/Workbook_Assets_Power_User_Update__Assets_View.md
+  doctoc:  
+    notitle: true 
+  pandoc:
+    css: '-c adls-theme/adls-theme.css'
+    latexTemplate: '--template adls-theme/adls-template.html'
+  wkhtmltopdf:
+    marginBottom: .7in
+    marginTop: 1in
+    marginLeft: .7in
+    marginRight: .7in
+    pageSize: Letter
+    headerFontSize: 8
+    headerSpacing: 5
+    headerRight: '[section]'
+    footerLine: true
+    footerFontSize: 8
+    footerLeft: '[doctitle]'
+    footerCenter: ''
+    footerRight: '[page]'
+docker:
+  excludePaths:
+    - /.*\/activity-files\/.*/
+    - /.*\/node_modules\/.*/
+    - /.*\/merged\/.*/
+    - /.*\/target\/.*/
+    - /.*\/.git\/.*/
+    - /.*\/.vscode\/.*/
+    - /.*\/.git\/.*/
+qa:
+  exclude: (frontmatter|preamble)

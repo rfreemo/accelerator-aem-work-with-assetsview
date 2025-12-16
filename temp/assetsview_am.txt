@@ -1,0 +1,9 @@
+Anil    vlab17emea3@adobevlab.com
+Bogdan     vlab17emea4@adobevlab.com
+Andrei   vlab17emea5@adobevlab.com
+Laura     vlab17emea6@adobevlab.com
+Hameet   vlab17emea7@adobevlab.com
+
+Org: vLab17-EMEA
+Assets View: https://experience.adobe.com
+Author: https://author-p166610-e1795784.adobeaemcloud.com/

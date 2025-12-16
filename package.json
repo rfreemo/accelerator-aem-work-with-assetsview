@@ -1,0 +1,22 @@
+{
+  "name": "assets-update-assetsview",
+  "version": "1.0.0",
+"scripts": {
+  "pre": "rm -r merged || true",
+  "merge-markdown": "npm run pre && npm run mm:docker && npm run cleanup",
+  "cleanup": "rm -f Dockerfile docker-compose.yml || true; npm run clean:activity-files",
+  "mm:docker": "merge-markdown -m manifest.yml --pdf --docker",
+  "mm:html": "merge-markdown -m manifest.yml --html",
+  "clean:activity-files": "npm run clean:react && npm run clean:maven",
+  "clean:react": "rm -r activity-files/react-app-final/node_modules || true",
+  "clean:maven": "find activity-files/maven-project -type d -name 'target' -exec rm -r {} +  || true",
+  "install:docker": "brew install caskroom/cask/brew-cask; brew cask install docker",
+  "install:mac:local": "npm run install:mac:pandoc && npm run install:mac:wkhtmltopdf",
+  "install:mac:pandoc": "brew install pandoc",
+  "install:mac:wkhtmltopdf": "",  
+  "design:update": "curl -o adls-theme/adls-theme.css https://git.corp.adobe.com/raw/ADLS/styleguide/main/adls-theme/adls-theme.css?token=GHSAT0AAAAAAAAFVCB2X2H5OAEVF6WNDRZ6Z3M6UWA"
+},
+"dependencies": {
+  "@knennigtri/merge-markdown": "^2.2.1" 
+}
+}

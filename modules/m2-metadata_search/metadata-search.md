@@ -16,20 +16,20 @@ In this module, you will:
 <!--{returnToMainTOC}-->
 <!-- END do not remove -->
 
-## Activity [#]-1:  View Metadata
+### Activity [#]-1:  Access Metadata
 
 1. In the Assets View UI click the information icon in the details panel, inspect the **metadata** in the *Basic* and *Advanced* tabs.  The fields are the defaults provided by Adobe.
 
-2. The image does actually have much more metadata that you do not currently see.  You can see this by downloading the image and inspecting it on your computer.
+2. The image has much more metadata that you do not currently see.  You can see **some** of this 'hidden' metadata by downloading the image and inspecting it on your computer (seeing **all** metadata is beyond the scope of the exercise)
    - In MacOS right-click on the image and click on **Get info** (result as in the screenshot below)
    - In Windows 11, right-click, then choose **Properties**, then **Details**.
 
       <img alt="screenshot of exercise" src="assets/metadata.png" width="400"/>
 
    > The reason you only see part of the metadata is because Adobe, and the system administrator, have applied **Metadata Forms**, so defining which metadata fields are visible and editable in the Assets View user interface (these Metadata Forms are the equivalent of Metadata Schemas in Admin View).
-   > By changing the Metadata Forms applied to folders and MIME types, difference metadata can be shown and edited, as required for the asset management in your company.
+   > By changing the Metadata Forms applied to folders and MIME types, different metadata can be shown and edited, as required for the asset management in your company.
 
-## Activity [#]-2: Understand Metadata Forms
+### Activity [#]-2: Apply Metadata Forms
 
 1. From the left menu, select **Settings** > **Metadata Forms**. You may see an empty page if only the default configurations are used as these defaults are invisible in the UI. You can see the defaults by either:
 
@@ -50,7 +50,12 @@ In this module, you will:
 
    <img alt="screenshot of exercise" src="assets/image17.png" width="602"/>  
 
-5. Select and delete the status field of the form.  This may suit a traditional folder-based permissions use case in which the status is not used.
+5. We will make the metadata property _photoshop:City_ visible and editable in Assets View (photoshop:City is an Adobe metadata field that could conceivably be important for your company, as the location where the image was created or edited, however we are using it merely as an example without a defined use-case!).  Add a single-line text field to the bottom of the form, then configure the form using:
+
+   - Metadata property: City (photoshop:City)
+   - Label: Photoshop City
+
+      <img alt="screenshot of exercise" src="assets/metadatacity.png" width="602"/>
 
 6. Click **Save**, wait for a success message, then **Close** to exit the form editor.
 
@@ -60,13 +65,21 @@ In this module, you will:
 
    <img alt="screenshot of exercise" src="assets/assign.png" width="602"/>
 
-9. Open your training asset detail. Your modified metadata form has been applied and your users will no longer be able to set or see the asset status.
+9. Open your training asset detail. Your modified metadata form has been applied and the field Photoshop City should now be visible, contain _Offenburg_ and be editable.  
 
 10. Return to your folder and upload in to your folder the **test.pdf** file in your Exercise_Files.
 
-11. After the asset has been processed open the details view and note that your metadata form is being used, not the MIME-type specific form that is normally used for a PDF (to see the standard form, open the same test.pdf that your instructor has uploaded in the Training Assets folder).
+11. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specifc, metadata form than an image.  An example issue us that photoshop:City is irrelevant for a PDF.
 
-## Activity [#]-3: Search
+### Activity [#]-3:  Metadata challenge! 
+
+1. Solve this problem of the PDF file having the metadata configuration of an image.  Your PDF and your Image should be able to exist inside your folder or child-folder(s), but with different, MIME-type appropriate, metadata fields.  The PDF should have the default PDF metadata visible, and the image should have your custom metadata visible.
+
+   > Hints:
+   > - The name of the default Metadata Form for a PDF form is _application_. 
+   > - Key point: you cannot apply multiple Metadata Forms to a folder.
+
+### Activity [#]-4: Search
 
 1. Click on the search icon at the top of the left panel.
 
@@ -86,4 +99,6 @@ In this module, you will:
 
 7. Experiment with natural language searches to explore the limits of the contextual search.   
 
-## Activity [#]-3: Search
+   > It is possible to add a custom filter to the search, for example the photoshop:City.  We will not do this as it is a central configuration that we cannot change without conflict on the training system.  In reality it will be managed by an administrator, or power user. You should just remember that configuration of search filters is possible, and straight-forward in most cases.
+
+

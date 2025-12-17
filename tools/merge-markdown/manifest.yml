@@ -1,0 +1,61 @@
+input:
+  apl-theme/frontmatter-guide.md:
+    noYAML: false
+    doctoc: false
+  ../../modules/m1-introduction/introduction.md:
+    replace:
+      \[#\]: 1
+  ../../modules/m2-metadata_search/metadata-search.md:
+    replace:
+      \[#\]: 2
+  ../../modules/m3-productivity/productivity.md:
+    replace:
+      \[#\]: 3
+noYAML: true
+doctoc: true
+replace:
+  <!--{timestamp}-->: 12/17/2025
+  <!--{copyrightYear}-->: '2025'
+  <!--{returnToMainTOC}-->: '[Return to Course Contents](#course-contents)'
+  <!--{courseType}-->: Activity Guide
+  <!--{courseTitle}-->: Working with AEM Assets View
+  <!--{courseCreator}-->: Adobe Digital Learning Services
+  <!--{author}-->: Rob Freeman
+  ({#(.*?)}): ''
+  \[!NOTE\]: 'NOTE:'
+  \[!CAUTION\]: 'CAUTION:'
+  \[!WARNING\]: 'WARNING:'
+  '!UICONTROL ': ''
+  '!DNL ': ''
+  '!VIDEO': Video Link
+output:
+  name: merged/guide/Working with AEM Assets View.md
+  doctoc:
+    notitle: true
+  pandoc:
+    css: '-c apl-theme/guide-theme.css'
+    latexTemplate: '--template apl-theme/templates/studentguide.html'
+  wkhtmltopdf:
+    marginBottom: .7in
+    marginTop: 1in
+    marginLeft: .7in
+    marginRight: .7in
+    pageSize: Letter
+    headerFontSize: 8
+    headerSpacing: 5
+    headerRight: '[section]'
+    footerLine: true
+    footerFontSize: 8
+    footerLeft: '[doctitle]'
+    footerCenter: ''
+    footerRight: '[page]'
+docker:
+  excludePaths:
+    - resources/
+    - deliverables/
+    - hooks/
+    - slides/
+    - content-generator/
+    - activity-files/
+qa:
+  exclude: (frontmatter|preamble)

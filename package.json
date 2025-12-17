@@ -1,22 +1,34 @@
 {
-  "name": "assets-update-assetsview",
+  "name": "aem-work-with-assetsview",
   "version": "1.0.0",
-"scripts": {
-  "pre": "rm -r merged || true",
-  "merge-markdown": "npm run pre && npm run mm:docker && npm run cleanup",
-  "cleanup": "rm -f Dockerfile docker-compose.yml || true; npm run clean:activity-files",
-  "mm:docker": "merge-markdown -m manifest.yml --pdf --docker",
-  "mm:html": "merge-markdown -m manifest.yml --html",
-  "clean:activity-files": "npm run clean:react && npm run clean:maven",
-  "clean:react": "rm -r activity-files/react-app-final/node_modules || true",
-  "clean:maven": "find activity-files/maven-project -type d -name 'target' -exec rm -r {} +  || true",
-  "install:docker": "brew install caskroom/cask/brew-cask; brew cask install docker",
-  "install:mac:local": "npm run install:mac:pandoc && npm run install:mac:wkhtmltopdf",
-  "install:mac:pandoc": "brew install pandoc",
-  "install:mac:wkhtmltopdf": "",  
-  "design:update": "curl -o adls-theme/adls-theme.css https://git.corp.adobe.com/raw/ADLS/styleguide/main/adls-theme/adls-theme.css?token=GHSAT0AAAAAAAAFVCB2X2H5OAEVF6WNDRZ6Z3M6UWA"
-},
-"dependencies": {
-  "@knennigtri/merge-markdown": "^2.2.1" 
-}
+  "scripts": {
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "npm run lint:md -- --fix",
+    "unreferenced:find": "node tools/maintenance/clean-unreferenced-assets.js modules",
+    "unreferenced:fix": "npm run unreferenced:find -- --fix",
+    "validate": "npm run lint:md && npm run unreferenced:find",
+    "fix": "npm run lint:md:fix && npm run unreferenced:fix",
+    "manifests:update": "node tools/merge-markdown/update-manifests.js",
+
+    "manifests:fix": "node tools/merge-markdown/update-manifests.js --fix",
+    "clean": "rimraf --glob **/deliverables && mkdir -p deliverables || true",
+    "build:guide": "merge-markdown -m tools/merge-markdown/manifest.yml --pdf --docker",
+    "build:ig": "merge-markdown -m tools/merge-markdown/instructor-notes.yml --word --docker",
+    "build:env": "merge-markdown -m tools/merge-markdown/environment-updates.yml --word --docker",
+    "build": "npm run build:guide && npm run build:ig && npm run build:env",
+    "package": "npm run clean && npm run manifests:fix && npm run build && cp tools/merge-markdown/merged/*.docx deliverables && cp tools/merge-markdown/merged/guide/*.pdf deliverables",
+
+    "project:clone": "echo 'use for a github project that needs to be cloned'",
+    "project:cleanup": "rimraf --glob activity-files/**/.git && rimraf --glob activity-files/**/.github || true",
+    "build:activity-files": "npm run project:clone && npm run project:cleanup",
+    "package:activity-files": "npm run build:activity-files && cd activity-files && zip -rq ../deliverables/activity-files.zip .",
+    
+    "package:all": "npm run package && npm run package:activity-files"
+  },
+  "dependencies": {
+    "@knennigtri/merge-markdown": "^2.5.1",
+    "content-generator": "git+https://github.com/knennigtri/content-generator.git",
+    "markdownlint-cli2": "^0.18.1",
+    "rimraf": "^5.0.0"
+  }
 }

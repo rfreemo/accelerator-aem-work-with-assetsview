@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="creator" content='Adobe Digital Learning Services' />
+    <meta name="subject" content='Instructor Led Training' />
+
+        <meta name="author" content="Rob Freeman" />
+        <meta name="dcterms.date" content="2025-12-17" />
+      
+    <title>Working with AEM Assets View</title>
+      <link rel="stylesheet" href="/home/runner/workspace/cli/tools/merge-markdown/apl-theme/guide-theme.css" />
+  </head>
+  <body>
+<img class="cover-page" src="/home/runner/workspace/cli/tools/merge-markdown/apl-theme/images/Adobe-logo.png" style="zoom:50%;" />
+<div class="cover-page cover-text">
+<div class="type">
+Activity Guide
+</div>
+<div class="title">
+Working with AEM Assets View
+</div>
+<div class="creator">
+Adobe Digital Learning Services
+</div>
+<div class="lang">
+<!--{courseLang}-->
+</div>
+</div>
+<div class="page-break">
+
+</div>
+<div class="copyright">
+©2025 Adobe. All rights reserved. </br></br> Working with AEM Assets
+View </br></br> If this guide is distributed with software that includes
+an end user agreement, this guide, as well as the software described in
+it, is furnished under license and may be used or copied only in
+accordance with the terms of such license. Except as permitted by any
+such license, no part of this guide may be reproduced, stored in a
+retrieval system, or transmitted, in any form or by any means,
+electronic, mechanical, recording, or otherwise, without the prior
+written permission of Adobe. Please note that the content in this guide
+is protected under copyright law even if it is not distributed with
+software that includes an end user license agreement. </br></br> The
+content of this guide is furnished for informational use only, is
+subject to change without notice, and should not be construed as a
+commitment by Adobe. Adobe assumes no responsibility or liability for
+any errors or inaccuracies that may appear in the informational content
+contained in this guide. </br></br> Please remember that existing
+artwork or images that you may want to include in your project may be
+protected under copyright law. The unauthorized incorporation of such
+material into your new work could be a violation of the rights of the
+copyright owner. Please be sure to obtain any permission required from
+the copyright owner. </br></br> Any references to company names in
+sample templates are for demonstration purposes only and are not
+intended to refer to any actual organization. </br></br> Adobe, the
+Adobe logo, Acrobat, the Creative Cloud logo, and the Adobe Marketing
+Cloud logo are either registered trademarks or trademarks of Adobe in
+the United States and/or other countries. </br></br> All other
+trademarks are the property of their respective owners. </br></br>
+Adobe, 345 Park Avenue, San Jose, California 95110, USA. </br></br>
+Notice to U.S. Government End Users. The Software and Documentation are
+“Commercial Items,” as that term is defined at 48 C.F.R. §2.101,
+consisting of “Commercial Computer Software” and “Commercial Computer
+Software Documentation,” as such terms are used in 48 C.F.R. §12.212 or
+48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or
+48 C.F.R. §§227.7202-1 through 227.7202-4, as applicable, the Commercial
+Computer Software and Commercial Computer Software Documentation are
+being licensed to U.S. Government end users (a) only as Commercial Items
+and (b) with only those rights as are granted to all other end users
+pursuant to the terms and conditions herein. Unpublished-rights reserved
+under the copyright laws of the United States. Adobe agrees to comply
+with all applicable equal opportunity laws including, if appropriate,
+the provisions of Executive Order 11246, as amended, Section 402 of the
+Vietnam Era Veterans Readjustment Assistance Act of 1974 (38 USC 4212),
+and Section 503 of the Rehabilitation Act of 1973, as amended, and the
+regulations at 41 CFR Parts 60-1 through 60-60, 60-250, and 60-741. The
+affirmative action clause and regulations contained in the preceding
+sentence shall be incorporated by reference. </br></br></br></br>
+<div class="last-updated">
+12/17/2025
+</div>
+</div>
+<div class="page-break">
+
+</div>
+<div class="toc">
+<h2 id="course-contents">
+Contents
+</h2>
+<p><!-- START auto-update -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --></p>
+<ul>
+<li><a href="#module-1-introduction-to-assets-view-and-metadata">Module
+1: Introduction to Assets View and Metadata</a>
+<ul>
+<li><a href="#activity-1-1-upload-and-edit-in-assets-view">Activity 1-1:
+Upload and Edit in Assets View</a>
+<ul>
+<li><a href="#create-a-folder-and-upload-an-image">Create a folder and
+upload an image</a></li>
+<li><a href="#use-the-version-viewer">Use the Version Viewer</a></li>
+</ul></li>
+<li><a href="#activity-1-2-access-renditions">Activity 1-2: Access
+Renditions</a>
+<ul>
+<li><a href="#explore-smart-crops-and-renditions">Explore Smart Crops
+and Renditions</a></li>
+</ul></li>
+<li><a href="#activity-1-3-publish-the-image">Activity 1-3: Publish the
+Image</a>
+<ul>
+<li><a href="#delete-and-restore-the-image">Delete and Restore the
+image</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#module-2-metadata-and-search">Module 2: Metadata and
+Search</a>
+<ul>
+<li><a href="#activity-2-1--access-metadata">Activity 2-1: Access
+Metadata</a></li>
+<li><a href="#activity-2-2-apply-metadata-forms">Activity 2-2: Apply
+Metadata Forms</a></li>
+<li><a href="#activity-2-3--metadata-challenge">Activity 2-3: Metadata
+challenge!</a></li>
+<li><a href="#activity-2-4-search">Activity 2-4: Search</a></li>
+</ul></li>
+<li><a href="#module-3-productivity">Module 3: Productivity</a>
+<ul>
+<li><a href="#activity-3-1-my-workspace-and-quick-access">Activity 3-1:
+My Workspace and Quick Access</a></li>
+<li><a
+href="#activity-3-2-use-notifications-to-track-asset-activity">Activity
+3-2: Use Notifications to Track Asset Activity</a></li>
+<li><a href="#activity-3-3-insights-and-reporting">Activity 3-3:
+Insights and Reporting</a></li>
+<li><a href="#activity-3-4-collections">Activity 3-4:
+Collections</a></li>
+<li><a href="#activity-3-5-sharing-links">Activity 3-5: Sharing
+links</a></li>
+</ul></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p><!-- END auto-update --></p>
+</div>
+<div class="page-break">
+
+</div>
+<h1 id="module-1-introduction-to-assets-view-and-metadata">Module 1:
+Introduction to Assets View and Metadata</h1>
+<h4 id="introduction">Introduction</h4>
+<p>In this module, you will learn the basic usage of the Assets View
+interface by uploading and editing an image, then focus on metadata
+management.</p>
+<h4 id="module-navigation">Module Navigation</h4>
+<!-- START do not remove -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#activity-1-1-upload-and-edit-in-assets-view">Activity 1-1:
+Upload and Edit in Assets View</a>
+<ul>
+<li><a href="#create-a-folder-and-upload-an-image">Create a folder and
+upload an image</a></li>
+<li><a href="#use-the-version-viewer">Use the Version Viewer</a></li>
+</ul></li>
+<li><a href="#activity-1-2-access-renditions">Activity 1-2: Access
+Renditions</a>
+<ul>
+<li><a href="#explore-smart-crops-and-renditions">Explore Smart Crops
+and Renditions</a></li>
+</ul></li>
+<li><a href="#activity-1-3-publish-the-image">Activity 1-3: Publish the
+Image</a>
+<ul>
+<li><a href="#delete-and-restore-the-image">Delete and Restore the
+image</a></li>
+</ul></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p><a href="#course-contents">Return to Course Contents</a>
+<!-- END do not remove --></p>
+<h2 id="activity-1-1-upload-and-edit-in-assets-view">Activity 1-1:
+Upload and Edit in Assets View</h2>
+<h3 id="create-a-folder-and-upload-an-image">Create a folder and upload
+an image</h3>
+<ol type="1">
+<li><p>Open <em>Experience Manager Assets</em> from the chocolate bar
+menu.</p></li>
+<li><p>Navigate to <em>Asset Management &gt; Assets &gt; WKND Shared
+&gt; English &gt; Training Assets</em> and use the <strong>Create
+Folder</strong> button to create a folder using your first name and an
+initial, if necessary, e.g., Rob<em>F</em>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image2.jpeg" width="400"/></p></li>
+<li><p><strong>Drag and drop</strong> the exercise image from the
+<em>Exercise_Files</em> folder on to your newly created folder. The
+<em>Upload Files</em> modal dialog appears.</p></li>
+<li><p>Leave the checkbox <em>Publish to AEM and Dynamic Media</em>
+<strong>unchecked</strong> and click <strong><em>Upload</em></strong>
+(the image that has been created with a large amount of meta-data
+specifically for testing – feel free to keep a copy for your own
+tests!).</p></li>
+</ol>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/upload.png" width="357"/></p>
+<ol start="5" type="1">
+<li><p>A green bar and success message is shown if the upload was
+successful, and a placeholder image should be shown shortly afterwards
+with a <strong><em>Processing</em></strong> label. The asset is being
+processed by AEM as a Cloud Service <em>Asset Microservices</em>.
+<strong>Be patient</strong> - this process can take more than a minute
+to complete.</p>
+<p>The UI will then automatically update and the label will change to
+<strong><em>new</em></strong>.</p></li>
+<li><p>Click the <strong>ellipsis</strong> (three dots) below the
+thumbnail of the image you just uploaded.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image6.png" width="357"/></p></li>
+<li><p>Choose Edit. A limited version of <strong>Adobe Express</strong>
+will open. <strong>Make any change</strong> such as cropping your
+image.</p></li>
+<li><p>Click <strong>Save</strong> As, then
+<strong>Version</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image7.png" width="483"/></p></li>
+<li><p>Image processing starts, as happened when you first uploaded the
+image. Click the <strong>back arrow</strong> to the folder.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image8.png" width="244"/></p></li>
+<li><p>While the image is processing, take some time to look at others
+parts of the UI, such as the configurable <em>My Workspace</em> (new in
+Assets View) and tagging (essentially the same as the Admin UI, except
+no management features).</p></li>
+</ol>
+<h3 id="use-the-version-viewer">Use the Version Viewer</h3>
+<ol type="1">
+<li><p>Once processing has completed, <strong>double-click on the
+asset</strong> to open it and click the ‘Versions’ (clock) icon in the
+right toolbar.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image9.png" width="321"/></p></li>
+<li><p>Select a previous version (the original). The image area nows
+shows the side-by-side comparison tool. Use this to inspect the changes
+made in Adobe Express.</p></li>
+<li><p>Click <strong>Make Latest</strong> to restore the original
+version.</p></li>
+</ol>
+<h2 id="activity-1-2-access-renditions">Activity 1-2: Access
+Renditions</h2>
+<h3 id="explore-smart-crops-and-renditions">Explore Smart Crops and
+Renditions</h3>
+<blockquote>
+<p>The training environment has Dynamic Media features. Dynamic Media is
+a separate licensed product that adds advanced asset handling features
+to Experience Manager.<br />
+As a result Dynamic Renditions and <a
+href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use">Smart
+Crops</a> are available. See</p>
+</blockquote>
+<ol type="1">
+<li><p>In the right hand menu (details area) you will find a list of
+Dynamic Renditions and Smart Crops. You can download a static version of
+the asset or, if the image is published, copy the URL using buttons
+below the renditions.</p></li>
+<li><p>Use the <strong>Switch View</strong> link to change to the same
+image in the <strong>Admin View</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/switchview.png" width="321"/></p></li>
+<li><p>In the Admin View select <strong>Renditions</strong> from the
+left rail menu.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/renditions.png" width="321"/></p></li>
+</ol>
+<p>The same are shown, including Dynamic Renditions and Smart Crops. The
+renditions are being delivered from the Dynamic Media preview
+server.</p>
+<ol start="4" type="1">
+<li><p>Use the <strong>Switch View</strong> link to change back to the
+same image in the <strong>Assets View</strong>.</p></li>
+<li><p>Click the back arrow, to the left of the image title to return to
+your folder.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image8.png" width="244"/></p></li>
+</ol>
+<h2 id="activity-1-3-publish-the-image">Activity 1-3: Publish the
+Image</h2>
+<ol type="1">
+<li><p>Open the test image by double clicking on it.</p></li>
+<li><p>Use the <strong>Switch View</strong> link to change to the same
+image in the <strong>Admin View</strong> (‘traditional’ Experience
+Manager).</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/switchview.png" width="321"/></p></li>
+<li><p>Once the image is open in the Admin View, copy the URL from the
+address bar. This should be similar to below but thout the spaces
+between URL segments.</p>
+<pre><code>https://author-p123456-e123456.adobeaemcloud.com  /ui#/aem/assets.html  /content/dam/wknd-shared/en/Training%20Assets/yourfolder/landscape_image_metadata_test.jpg  ?appId=aemshell</code></pre></li>
+<li><p>Construct the URL for the image on the Experience Manager publish
+server by replacing the word <strong>author</strong> with
+<strong>publish</strong>, and removing the the elements
+<em>/ui#/aem/assets.html</em> (this is the editing interface) and
+<em>?appId=aemshell</em>, giving you a URL like this:</p>
+<pre><code>https://publish-p123456-e123456.adobeaemcloud.com/content/dam/wknd-shared/en/Training%20Assets/yourfolder/landscape_image_metadata_test.jpg</code></pre></li>
+<li><p>In a new tab or window navigate to the new URL in your browser
+address bar (new tab or window) and you should get a <strong>Not
+Found</strong> error. This is because the image has not been published
+(if you do see the image at this point, you may have published it by
+mistake when uploading).</p></li>
+<li><p>In the Experience Manager editor use the <strong>switch
+view</strong> to move from Admin View back to Assets View.</p></li>
+<li><p>Navigate to the containing folder (<em>Training Assets</em>,
+select the image and click <strong>publish</strong> in the blue actions
+bar.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publish.png" width="321"/></p></li>
+<li><p>Select the <em>AEM</em> checkbox in the modal dialog and
+<strong>publish</strong>. A green notification panel will confirm that
+the image was published.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publish_modal.png" width="240"/></p></li>
+<li><p>Once again enter the publish instance URL for the image in a new
+tab (the URL is <strong>similar</strong> to below). This time there will
+be no <em>Not Found</em> error and the published image will either open,
+or download.</p>
+<pre><code>https://publish-p123456-e123456.adobeaemcloud.com/content/dam/wknd-shared/en/Training%20Assets/yourfolder/landscape_image_metadata_test.jpg</code></pre></li>
+<li><p>Open the details panel of the test image and scroll to the bottom
+of the panel. Note that the publish state and publishing time of the
+asset is shown.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publishdata.png" width="321"/></p>
+<blockquote>
+<p>The publish mechanism creates a copy of the asset on the Experience
+Manager publish server, and optionally to the Dynamic Media delivery
+server.<br />
+Until the release of the latest generation of AEM Assets tools (ca.
+2024), this was the standard way to make images available for use by
+asset consumers, or for use in Experience Manager (Sites) web pages.</p>
+<p>We do not <strong>approve</strong> images in this exercise as we are
+not using one of the new delivery channels (Content Hub or the Dynamic
+Media API). Approval is a metadata field that only becomes relevant when
+using these systems.</p>
+</blockquote></li>
+</ol>
+<h3 id="delete-and-restore-the-image">Delete and Restore the image</h3>
+<ol type="1">
+<li><p>Navigate to your folder and use the ellipsis menu to delete your
+test image, clicking first on the <strong>delete</strong> button in the
+menu, then again on the delete button in the modal confirmation layer.
+The image is removed from the UI.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/delete_image.png" width="240"/></p>
+<blockquote>
+<p>In the Admin View (Touch UI) this is a final operation. Without the
+restoration of a backup this cannot be undone. Assets View is different
+and has a Trash folder. Images deleted using Assets View can be
+restored.</p>
+</blockquote></li>
+<li><p>As only asset and folder titles are visible in the Trash tile
+view, it can be difficult to find an image if there are others, as is
+likely the case if your fellow students hsve also deleted their test
+images. To overcome this, change to the <strong>list view</strong> as
+shown below:</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/trash_tileview.png" width="550"/></p></li>
+<li><p>Locate your deleted image, click the ellipsis and then
+<strong>restore</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/restore_image.png" width="220"/></p></li>
+<li><p>Check your folder to be sure that the image was
+restored.</p></li>
+</ol>
+<h1 id="module-2-metadata-and-search">Module 2: Metadata and Search</h1>
+<h4 id="introduction-1">Introduction</h4>
+<p>In this module, you will: - learn how asset metadata is accessed in
+the user interface - learn how to configure the available metadata
+fields - use the search mechanism - understand search mechanism
+configuration</p>
+<h4 id="module-navigation-1">Module Navigation</h4>
+<!-- START do not remove -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#activity-2-1--access-metadata">Activity 2-1: Access
+Metadata</a></li>
+<li><a href="#activity-2-2-apply-metadata-forms">Activity 2-2: Apply
+Metadata Forms</a></li>
+<li><a href="#activity-2-3--metadata-challenge">Activity 2-3: Metadata
+challenge!</a></li>
+<li><a href="#activity-2-4-search">Activity 2-4: Search</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p><a href="#course-contents">Return to Course Contents</a>
+<!-- END do not remove --></p>
+<h3 id="activity-2-1-access-metadata">Activity 2-1: Access Metadata</h3>
+<ol type="1">
+<li><p>In the Assets View UI click the information icon in the details
+panel, inspect the <strong>metadata</strong> in the <em>Basic</em> and
+<em>Advanced</em> tabs. The fields are the defaults provided by
+Adobe.</p></li>
+<li><p>The image has much more metadata that you do not currently see.
+You can see <strong>some</strong> of this ‘hidden’ metadata by
+downloading the image and inspecting it on your computer (seeing
+<strong>all</strong> metadata is beyond the scope of the exercise)</p>
+<ul>
+<li><p>In MacOS right-click on the image and click on <strong>Get
+info</strong> (result as in the screenshot below)</p></li>
+<li><p>In Windows 11, right-click, then choose
+<strong>Properties</strong>, then <strong>Details</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/metadata.png" width="400"/></p></li>
+</ul>
+<blockquote>
+<p>The reason you only see part of the metadata is because Adobe, and
+the system administrator, have applied <strong>Metadata Forms</strong>,
+so defining which metadata fields are visible and editable in the Assets
+View user interface (these Metadata Forms are the equivalent of Metadata
+Schemas in Admin View). By changing the Metadata Forms applied to
+folders and MIME types, different metadata can be shown and edited, as
+required for the asset management in your company.</p>
+</blockquote></li>
+</ol>
+<h3 id="activity-2-2-apply-metadata-forms">Activity 2-2: Apply Metadata
+Forms</h3>
+<ol type="1">
+<li><p>From the left menu, select <strong>Settings</strong> &gt;
+<strong>Metadata Forms</strong>. You may see an empty page if only the
+default configurations are used as these defaults are invisible in the
+UI. You can see the defaults by either:</p>
+<ul>
+<li><p>View the metadata in the details of an asset as we did in the
+previous exercise.</p></li>
+<li><p>Create a new form using an existing form structure as the
+template. Although this is <strong>normally a power user or
+administrator responsibility</strong>, we’ll do that now:</p></li>
+</ul></li>
+<li><p>In the Metadata Forms panel, click <strong>Create</strong>, then
+enter *&lt;your initials&gt;_default* in the Name field of
+<strong>Create Metadata Form</strong> panel, eg.,
+<em>js_default</em>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/new_form.png" width="245"/></p>
+<p>(if you were to name the new form <em>default</em> you would override
+the standard default form - <strong>DON’T do that</strong> in this
+exercise. The default is applied to any assets that do not have forms
+specific to their MIME types).</p></li>
+<li><p>Select the <strong>checkbox</strong> <em>use existing form
+structure as template</em> and the select <em>default</em> in the
+<strong>Choose from</strong> field. Click
+<strong>Create</strong>.</p></li>
+<li><p>The Metadata Form Editor is loaded. The fields shown are copied
+from the standard <em>default</em> form.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/image17.png" width="602"/></p></li>
+<li><p>We will make the metadata property <em>photoshop:City</em>
+visible and editable in Assets View (photoshop:City is an Adobe metadata
+field that could conceivably be important for your company, as the
+location where the image was created or edited, however we are using it
+merely as an example without a defined use-case!). Add a single-line
+text field to the bottom of the form, then configure the form using:</p>
+<ul>
+<li><p>Metadata property: City (photoshop:City)</p></li>
+<li><p>Label: Photoshop City</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/metadatacity.png" width="602"/></p></li>
+</ul></li>
+<li><p>Click <strong>Save</strong>, wait for a success message, then
+<strong>Close</strong> to exit the form editor.</p></li>
+<li><p>As your form is named neither <em>default</em> nor a MIME type,
+it will not be used anywhere yet.</p></li>
+<li><p>Now assign your form to your folder in Training Assets by
+clicking <strong>Assign to Folders</strong> in the blue header bar, then
+selecting <strong>your folder</strong> and clicking
+<strong>Assign</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/assign.png" width="602"/></p></li>
+<li><p>Open your training asset detail. Your modified metadata form has
+been applied and the field Photoshop City should now be visible, contain
+<em>Offenburg</em> and be editable.</p></li>
+<li><p>Return to your folder and upload in to your folder the
+<strong>test.pdf</strong> file in your Exercise_Files.</p></li>
+<li><p>After the asset has been processed open the details view and note
+that your <strong>custom metadata form</strong> is being used, This may
+not be desirable as a PDF is a different MIME type to an image, and by
+default has a different, PDF specifc, metadata form than an image. An
+example issue us that photoshop:City is irrelevant for a PDF.</p></li>
+</ol>
+<h3 id="activity-2-3-metadata-challenge">Activity 2-3: Metadata
+challenge!</h3>
+<ol type="1">
+<li><p>Solve this problem of the PDF file having the metadata
+configuration of an image. Your PDF and your Image should be able to
+exist inside your folder or child-folder(s), but with different,
+MIME-type appropriate, metadata fields. The PDF should have the default
+PDF metadata visible, and the image should have your custom metadata
+visible.</p>
+<blockquote>
+Hints:
+<ul>
+<li>The name of the default Metadata Form for a PDF form is
+<em>application</em>.</li>
+<li>Key point: you cannot apply multiple Metadata Forms to a
+folder.</li>
+</ul>
+</blockquote></li>
+</ol>
+<h3 id="activity-2-4-search">Activity 2-4: Search</h3>
+<ol type="1">
+<li><p>Click on the search icon at the top of the left panel.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/global_search.png" width="351"/></p></li>
+<li><p>Search for <em>Lake</em> to view a selection of results. Note
+that you searched the entire DAM. When the results are shown you can
+filter by path, but it is a secondary action.</p></li>
+<li><p>Click the back arrow (ideally in Assets View, not the browser
+back button).</p></li>
+<li><p>If not already enabled, enabled the contextual search
+functionality using the toggle to the right of the search field.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/search_toggle.png" width="351"/></p></li>
+<li><p>Enter <em>images of a lake uploaded in the last
+week</em></p></li>
+<li><p>You will see fewer images and a <em>Create Date</em> search
+filter has been automatically added to the header search bar. This is
+the result of the natural language search - creation of search
+filters.</p></li>
+<li><p>Experiment with natural language searches to explore the limits
+of the contextual search.</p>
+<blockquote>
+<p>It is possible to add a custom filter to the search, for example the
+photoshop:City. We will not do this as it is a central configuration
+that we cannot change without conflict on the training system. In
+reality it will be managed by an administrator, or power user. You
+should just remember that configuration of search filters is possible,
+and straight-forward in most cases.</p>
+</blockquote></li>
+</ol>
+<h1 id="module-3-productivity">Module 3: Productivity</h1>
+<h4 id="introduction-2">Introduction</h4>
+<p>In this module, you’ll explore productivity tools available in
+<strong>Assets View</strong> that make everyday asset management easier
+— including personalization, notifications, insights, collections, and
+sharing.</p>
+<h4 id="module-navigation-2">Module Navigation</h4>
+<!-- START do not remove -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#activity-3-1-my-workspace-and-quick-access">Activity 3-1:
+My Workspace and Quick Access</a></li>
+<li><a
+href="#activity-3-2-use-notifications-to-track-asset-activity">Activity
+3-2: Use Notifications to Track Asset Activity</a></li>
+<li><a href="#activity-3-3-insights-and-reporting">Activity 3-3:
+Insights and Reporting</a></li>
+<li><a href="#activity-3-4-collections">Activity 3-4:
+Collections</a></li>
+<li><a href="#activity-3-5-sharing-links">Activity 3-5: Sharing
+links</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p><a href="#course-contents">Return to Course Contents</a>
+<!-- END do not remove --></p>
+<h3 id="activity-3-1-my-workspace-and-quick-access">Activity 3-1: My
+Workspace and Quick Access</h3>
+<p>The <strong>My Workspace &gt; Quick Assets</strong> panel in Assets
+View gives you quick access to the assets and folders you use most
+frequently. You can “pin” items to this view so they are always visible
+when you sign in.</p>
+<ol type="1">
+<li><p>From the left navigation, select <strong>My Workspace</strong> to
+open your personalized workspace. Notice the <em>Quick Access</em>
+panel, which will probably be empty.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/myworkspace.png" width="200"/></p></li>
+<li><p>Now navigate to <strong>Assets &gt; WKND Shared &gt; English &gt;
+Activities</strong></p>
+<blockquote>
+<p>You may still be in the List view from a previous exercise. To make
+your system look like the screenshots, you can return to Grid View, use
+the view switcher (top right of the main panel)</p>
+</blockquote></li>
+<li><p>Hover over the <em>hiking</em> folder tile, click the
+<strong>ellipsis (⋮)</strong> icon, and select <strong>Pin to Quick
+Access</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/pin_folder_menu.png" width="480"/></p></li>
+<li><p>A modal dialog appears with multiple options. Select <strong>For
+Myself</strong>.</p></li>
+<li><p>In the green confirmation message choose <strong>view</strong> or
+navigate to <strong>My Workspace</strong> as before. The <em>hiking</em>
+folder now appears as a pinned item in the <em>Quick Access -&gt; My
+pinned items</em> tab. Had you chosen to pin for a group or organization
+in the previous step, the folder would instead show in the <em>Shared
+Items</em> tab.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/my_pinned_items.png" width="320"/></p></li>
+<li><p>Click on the <strong>ellipsis (⋮)</strong> in your pinned item
+and click <strong>Open in a new tab</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/open_pinned_item.png" width="420"/></p></li>
+<li><p>The <em>hiking</em> folder opens. Click the <strong>ellipsis
+(⋮)</strong> under an image you like and choose <strong>Pin to Quick
+Access</strong>, in the same way that you added a folder in a previous
+step.</p></li>
+<li><p>Once again choose to pin <strong>For Myself</strong> and then
+view the results in your Quick Access area (<em>My Workspace &gt; Quick
+Access</em>).</p></li>
+</ol>
+<blockquote>
+<p>💡 <em>Pinning assets “For Myself” is similar to the “lightbox”
+functionality of the older Admin View assets interface</em></p>
+</blockquote>
+<h3 id="activity-3-2-use-notifications-to-track-asset-activity">Activity
+3-2: Use Notifications to Track Asset Activity</h3>
+<p>You can receive notifications whenever assets you care about are
+updated, published, or have metadata changes.<br />
+Here you’ll <em>watch</em> a folder, then trigger a notification later
+when we publish an updated image.</p>
+<ol type="1">
+<li><p>Navigate to the <em>Training Assets</em> folder.</p></li>
+<li><p>(Tip: Read the next step before completing this one!) Select your
+folder (for example, <em>RobF</em>) and in the blue actions bar choose
+<strong>Watch</strong>. If you don’t see the <em>Watch</em> link, show
+hidden items by clicking the ellipsis at the and of the bar a shown in
+the screenshot below.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watch.png" width="480"/></p></li>
+<li><p>A green confirmation message will be shown when the
+<em>watch</em> has been successfully created. Note that a link to your
+<strong>Notification Preferences</strong> is shown in the success
+message. Click on this. If the message is no longer visible, you can
+<strong>unwatch</strong> and <strong>watch</strong> again.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watch_notification.png" width="480"/></p></li>
+<li><p>In the <strong>Notifications -&gt; Assets</strong> area of the
+preferences page, ensure that all items are set to
+<strong>In-app</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/xc_notifications.png" width="380"/></p></li>
+<li><p>Close the tab containing the notifications settings, so returning
+to the Assets View UI.</p></li>
+<li><p>Click the <strong>Watched Assets</strong> link in the left menu
+bar. Select the watched folder to see a list of your watches.</p>
+<p><img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watched_assets.png" width="220"/></p></li>
+</ol>
+<blockquote>
+<p>🔔 We’ll trigger this subscription later when you publish or edit
+assets in a later module.</p>
+</blockquote>
+<h3 id="activity-3-3-insights-and-reporting">Activity 3-3: Insights and
+Reporting</h3>
+<h4 id="view-asset-insights">View Asset Insights</h4>
+<p>Assets View provides automatically generated insights that show how
+assets are being used over time. These insights are available at a
+global level and help authors understand overall asset usage trends.</p>
+<p>In this activity, you’ll open the Insights view and review the
+available charts.</p>
+<ol type="1">
+<li><p>From the left navigation pane, click the Insights <em>graph
+icon</em>.</p>
+<p><img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/insights.png" width="220"/></p>
+<p>The Insights page opens, displaying automatically generated charts
+based on asset usage.</p></li>
+<li><p>Review the available charts.</p></li>
+<li><p>Use the time range dropdowns to explore how asset activity
+changes over time.</p></li>
+</ol>
+<blockquote>
+<p>Insights provide authors with a simple high-level, read-only view of
+asset usage without running reports or modifying content.</p>
+</blockquote>
+<h3 id="activity-3-4-collections">Activity 3-4: Collections</h3>
+<h4 id="create-and-add-assets-to-a-collection">Create and add assets to
+a collection</h4>
+<p>Collections let you group related assets — for example, all images
+you plan to use in an upcoming campaign — without moving the original
+files.</p>
+<ol type="1">
+<li><p>We’ll start by creating an empty Collection. Click on the
+Collections icon in the sidebar, then <strong>Create a
+Collection</strong>. Give you collection a simple name susch as
+_your-initials-_Collection, select the <strong>private</strong> open and
+click <strong>Create</strong>.</p>
+<p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/create_collection.png" width="420"/></p></li>
+<li><p>From the <em>WKND Shared &gt; English &gt; Activities</em>
+folder, find three images that you like, and for each:</p>
+<ul>
+<li><p>Click <strong>Add to Collection</strong> in the blue action menu
+bar, then choose your Collection and click <strong>Add</strong>. A
+confirmation message is shown and the Collection modal closes.</p>
+<p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/add-to-collection2.png" width="420"/></p></li>
+</ul>
+<blockquote>
+<p>You can also use an Asset’s ellipsis menu to <em>Add to
+Collection</em>.</p>
+</blockquote></li>
+<li><p>Navigate again to <strong>Collections</strong>.You see your
+chosen images.</p></li>
+</ol>
+<blockquote>
+<p>Note that the images are <strong>not</strong> copies of the
+originals. The collection is a kind of virtual folder containing only
+references to the original images. For example you can delete a
+Collection without the contained images being deleted from the system. A
+collection is not as fully featured as a genuined folder. For example a
+Collection cannot be used for bulk operations such as applying metadata,
+nor can a Metadata Form be applied to a Collection.</p>
+</blockquote>
+<h4 id="investigate-collection-permissions">Investigate collection
+permissions</h4>
+<ol type="1">
+<li><p>As you create a <strong>private</strong> collection, you can
+control the access rights to your collection. To do this view your
+Collection in the Collections panel, and choose <strong>Manage
+permissions</strong> from the ellipsis menu.</p>
+<p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/collections_permissions.png" width="240"/></p></li>
+<li><p>Note that you have automatically been added as the Collection
+owner.</p>
+<p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/collections_permissions.png" width="240"/></p></li>
+<li><p>We won’t apply and test permissions in this course, but if you’re
+working with another student, feel free to experiment with the
+permissions system by assigning permissions to them. To do this the next
+section, sharing, may come in useful!</p></li>
+</ol>
+<h3 id="activity-3-5-sharing-links">Activity 3-5: Sharing links</h3>
+<p>You can share a collection, folder or individual asset as a secure
+link — useful for review or external collaboration.</p>
+<ol type="1">
+<li><p>Choose your original test image and choose <strong>Share
+link</strong> from the ellipsis menu.</p>
+<p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/share_link.png" width="240"/></p></li>
+<li><p>Copy the link from the link share dialog, and note that the link
+has a unique ID. It is not just a simple path to the entity that you
+shared, and does have an expiry time which you can set at this
+point.</p></li>
+<li><p>Open an incognito window, or a different browser in which you are
+<strong>NOT logged in</strong> with an Adobe account.<br />
+</p></li>
+<li><p>Past the shared link into the address bar. Notice the link is to
+an author URL such as:
+<code>https://author-p123456-e123456.adobeaemcloud.com/linkshare.html?sh=_long_unique_id</code>,
+and all content on an author instance would normally require
+authentication.</p></li>
+<li><p>Click return and see tha image is visible and can be downloaded
+by your simulated <strong>unauthenticated user</strong> in the Link
+Share viewer</p>
+<p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/linkshare.png" width="340"/></p></li>
+</ol>
+  </body>
+</html>

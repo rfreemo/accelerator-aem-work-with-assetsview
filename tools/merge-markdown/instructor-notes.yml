@@ -1,0 +1,21 @@
+input:
+  ../../instructor-notes.md:
+    replace:
+      ^# (.+): |-
+        <!--{yaml}-->
+
+        <!--{intro-paragraph}-->
+output:
+  name: merged/Instructor Notes.md
+  pandoc:
+    refDoc: '--reference-doc apl-theme/templates/deliverables.docx'
+replace:
+  <!--{yaml}-->: |-
+    ---
+    title: <!--{subject}-->
+    subtitle: <!--{title}-->
+    ---
+  <!--{intro-paragraph}-->: Last auto-generated <!--{timestamp}-->  by [merge-markdown](https://github.com/knennigtri/merge-markdown).
+  <!--{timestamp}-->: 12/17/2025
+  <!--{title}-->: Working with AEM Assets View
+  <!--{subject}-->: Instructor Guide notes

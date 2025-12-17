@@ -1,0 +1,450 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/src/index.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./node_modules/glob-import-loader/index.js!./src/main/webpack/site/main.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+@font-face {
+  font-family: adobe-clean;
+  src: url("fonts/AdobeClean-Regular.otf") format("opentype");
+  font-display: optional;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: adobe-clean;
+  src: url("fonts/AdobeClean-Light.otf") format("opentype");
+  font-display: optional;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: adobe-clean;
+  src: url("fonts/AdobeClean-BoldSemiCn.otf") format("opentype");
+  font-display: optional;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: adobe-clean;
+  src: url("fonts/AdobeClean-It.otf") format("opentype");
+  font-display: optional;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+html, body {
+  font-family: adobe-clean, sans-serif, monospace;
+  font-weight: normal;
+  font-style: normal;
+  color: #404040;
+  font-size: 11pt;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 30pt;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 15pt;
+}
+
+h4 {
+  font-size: 12pt;
+}
+
+h5, h6 {
+  font-size: 12pt;
+}
+
+/* Make entire design left adjusted */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+  margin-bottom: auto;
+}
+
+/* Module/Chapter Titles */
+h1 {
+  margin: 22.5pt 0;
+}
+
+/* Exercise/Activity titles */
+h2 {
+  border-bottom: 0.05em solid;
+  padding-bottom: 3pt;
+  margin: 15pt 0;
+}
+
+/* Subtopics (h3), Tasks (h4), sub-subtopics (h5), sub-sub-subtopics (h6) */
+h3,
+h4,
+h5,
+h6 {
+  margin: 7.5pt 0;
+}
+
+/* Normal text */
+p {
+  margin: 0 0 7.5pt 0;
+}
+
+/* Hyperlinks! */
+a {
+  color: #065588;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Lists */
+li {
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 22.5pt;
+  margin: 0, 0, 7.5pt, 0;
+}
+
+/* Ordered Lists */
+ol > li::marker {
+  font-weight: bold;
+}
+
+/* Unordered Lists */
+/* Images */
+img,
+p > img:only-child {
+  border: 2px solid #8c8c8c;
+  max-width: 100%;
+  display: block;
+  margin-top: 15pt;
+  margin-bottom: 15pt;
+}
+
+figcaption {
+  display: none;
+}
+
+/* Note | Warning | Tip | Hint */
+/* Bold the first word/phrase to emphasize the blockquote type */
+blockquote {
+  border-left: 5px solid #4D4D4D;
+  background-color: #f5f5f5;
+  margin: 15pt 7.5pt 15pt 0;
+  border-radius: 5px 0 0 5px; /* Rounded top-left and bottom-left corners only */
+  padding: 9.75pt;
+}
+blockquote::before {
+  content: "⚠"; /* Empty content for the image */
+  font-size: 16pt;
+  background-size: contain; /* Scales the image proportionally */
+  background-repeat: no-repeat; /* Prevents tiling */
+  margin-right: 3pt; /* Space between the icon and text */
+}
+blockquote > p {
+  display: inline;
+}
+
+/* Tables */
+table {
+  margin: 15pt 0 15pt 0;
+  display: block;
+  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+}
+table th,
+table td {
+  padding: 3pt 9.75pt;
+  border: 1px solid #404040;
+}
+table tr > th {
+  border: 1px solid #404040;
+  background-color: #efefef;
+  padding: 9.75pt;
+}
+
+/* Code Snippet with `my snippet` */
+code {
+  background: #f1f3f5;
+  padding: 0.1em;
+  font-size: 9pt;
+}
+
+/* Code Block with ``` my code ``` */
+pre {
+  background: #f6f8fa;
+  border: 1px solid #ddd;
+  border-left: 3px solid #ff0000;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 11pt;
+  line-height: 1.5;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap; /* Allow wrapping of long lines */
+  word-wrap: break-word; /* Break long words if necessary */
+  position: relative;
+}
+pre code {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+  counter-reset: line;
+}
+pre code > span:before {
+  content: counter(line) ". ";
+  color: gray;
+}
+pre code > span {
+  counter-increment: line;
+}
+pre code .co { /* comment */
+  color: forestgreen;
+}
+pre code .kw { /* keyword */
+  color: blue;
+}
+pre code .st { /* string */
+  color: #b22222;
+}
+pre code .er { /* error messages */
+  color: #ff6f61;
+}
+pre code .dv { /* directive */
+  color: #2a9d8f;
+}
+pre code .im { /* imports */
+  color: #FF00FF;
+}
+pre code .cf { /* ?? */
+  color: #FF00FF;
+}
+pre code .fu { /* function */
+  color: #b8860b;
+}
+pre code .bu { /* built-in function */
+  color: mediumblue;
+}
+pre code .op { /* operator */
+  color: #404040;
+}
+pre code .at { /* attribute */
+  color: #404040;
+}
+pre code .vs { /* variable names */
+  color: #404040;
+}
+
+/* FIXES and BUGS */
+/* Spacing issues within a paragraph for these elements */
+strong, a, em, code {
+  margin-left: 2.5pt;
+  margin-right: 2.5pt;
+}
+
+/************* TOC Customization *************/
+/* TOC black links */
+.toc {
+  /***** level 1 style *****/
+  /*
+      > ul > li {
+          // border-top: .1em solid $font-color;
+          margin-top: 1em;
+      }
+  */
+}
+.toc div {
+  font-size: 16pt;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3pt;
+}
+.toc ul li,
+.toc ul ul li,
+.toc ul ul ul li {
+  list-style: none;
+}
+.toc a {
+  color: #404040;
+  text-decoration: none;
+}
+.toc li,
+.toc a {
+  margin: 0.1em;
+}
+.toc > ul > li {
+  /***** Level 2 style *****/
+}
+.toc > ul > li > a {
+  margin-left: 0em;
+  font-size: 11pt;
+  font-weight: bold;
+}
+.toc > ul > li > ul {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.toc > ul > li > ul > li {
+  /***** Level 3 style *****/
+}
+.toc > ul > li > ul > li > a {
+  font-size: 11pt;
+}
+.toc > ul > li > ul > li > ul {
+  display: none;
+}
+.toc > ul > li > ul > li > ul > li > a {
+  color: gray;
+  font-size: 11pt;
+}
+
+/************* Copyright Page *************/
+.copyright {
+  margin-top: 1em;
+  font-size: 10pt;
+  line-height: 1.5em;
+}
+
+.last-updated {
+  text-align: right;
+}
+
+/************* Cover Page Customization *************/
+img.cover-page {
+  display: block;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 8px;
+  max-height: 1.25in;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cover-text {
+  display: block;
+  margin: 15em auto;
+}
+.cover-text .type {
+  font-size: 28pt;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  border-bottom: none;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  page-break-before: avoid;
+  -webkit-column-break-before: avoid;
+     -moz-column-break-before: avoid;
+          break-before: avoid;
+}
+.cover-text .title {
+  font-size: 22pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 1px solid;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.1em;
+  page-break-before: avoid;
+  -webkit-column-break-before: avoid;
+     -moz-column-break-before: avoid;
+          break-before: avoid;
+  line-height: 1.1;
+}
+.cover-text .creator {
+  font-size: 14pt;
+  page-break-before: avoid;
+  -webkit-column-break-before: avoid;
+     -moz-column-break-before: avoid;
+          break-before: avoid;
+}
+
+#module-contents + ul a {
+  text-decoration: none;
+}
+
+#module-contents + ul + p a {
+  text-decoration: none;
+}
+
+/************* PDF Output Only *************/
+/* Move h1, h2, TOC, and footnotes to a new page */
+h1, h2, .toc, .footnotes-area {
+  page-break-before: always;
+  -webkit-column-break-before: page;
+     -moz-column-break-before: page;
+          break-before: page;
+}
+
+/* Page break after global TOC */
+.toc {
+  page-break-after: always;
+  -webkit-column-break-after: page;
+     -moz-column-break-after: page;
+          break-after: page;
+}
+
+/* First h1 heading of document */
+h1:first-of-type {
+  page-break-before: avoid;
+  -webkit-column-break-before: avoid;
+     -moz-column-break-before: avoid;
+          break-before: avoid;
+}
+
+/* Avoid breaks after an intro title */
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+  -webkit-column-break-after: avoid;
+     -moz-column-break-after: avoid;
+          break-after: avoid-page;
+}
+
+/* Avoid breaks between a single element */
+.CodeMirror,
+blockquote,
+figure,
+table,
+li,
+p {
+  page-break-inside: avoid;
+}
+
+/*  Optional Page Break */
+.page-break {
+  page-break-after: always;
+  -webkit-column-break-after: page;
+     -moz-column-break-after: page;
+          break-after: page;
+}

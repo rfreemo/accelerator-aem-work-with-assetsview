@@ -1,6 +1,0 @@
-{ "restrictionPropertyNames":[
-    "dam:status"
-  ],
-  "restrictionContentPropertyNames":[],
-  "enabled":true
-}

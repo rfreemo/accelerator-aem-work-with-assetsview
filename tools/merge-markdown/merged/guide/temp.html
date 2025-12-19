@@ -127,6 +127,12 @@ Collections</a></li>
 <li><a href="#activity-3-5-sharing-links">Activity 3-5: Sharing
 links</a></li>
 </ul></li>
+<li><a href="#module-4-dynamic-media-templates">Module 4: Dynamic Media
+Templates</a>
+<ul>
+<li><a href="#activity-4-1-create-a-dynamic-media-template">Activity
+4-1: Create a Dynamic Media Template</a></li>
+</ul></li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <p><!-- END auto-update --></p>
@@ -718,5 +724,132 @@ by your simulated <strong>unauthenticated user</strong> in the Link
 Share viewer</p>
 <p><img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/linkshare.png" width="340"/></p></li>
 </ol>
+<h1 id="module-4-dynamic-media-templates">Module 4: Dynamic Media
+Templates</h1>
+<h4 id="introduction-3">Introduction</h4>
+<p>In this activity you will learn to use the Dynamic Media Template
+Editor.</p>
+<p>The scenario for this is:</p>
+<ul>
+<li>the <a href="https://wknd.enablementadobe.com/us/en.html">WKND
+website</a> team have identified that their logo and website header
+combination does not fit the brand well, and should be updated to
+present a more adventurous, exciting or exotic feel to the website.</li>
+</ul>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/wknd2.png" width="480"/></p>
+<ul>
+<li>The logo area should change weekly giving the website a fresh look
+for returning visitors.</li>
+<li>To make changes in logo position, font, colour and background images
+would need either ongoing work by the creative team, and/or development
+work to make changes to the page HTML and styling.</li>
+<li>The team have decided to try Dynamic Media Templates so that the
+website authors can make changes to the logo area dynamically using URL
+parameters that they will define in Dynamic Media templates, and
+configure in the Experience Manager header component.</li>
+<li>In the activity we will prepare a proof-of-concept logo and
+background image for the team.<br />
+</li>
+<li>The logo will only be used on full screen views. The logo size is
+320 x 200px.</li>
+</ul>
+<h4 id="module-navigation-3">Module Navigation</h4>
+<!-- START do not remove -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#activity-4-1-create-a-dynamic-media-template">Activity
+4-1: Create a Dynamic Media Template</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p><a href="#course-contents">Return to Course Contents</a>
+<!-- END do not remove --></p>
+<h3 id="activity-4-1-create-a-dynamic-media-template">Activity 4-1:
+Create a Dynamic Media Template</h3>
+<h4 id="create-a-dynamic-media-template">Create a Dynamic Media
+Template</h4>
+<ol type="1">
+<li><p>From the left navigation, select <strong>Dynamic Media
+Assets</strong>.</p></li>
+<li><p>Navigate to your training folder created earlier in the course,
+then open the <strong>dynamic_media</strong> subfolder.</p>
+<blockquote>
+<p>Note! you do not see your images as only Dynamic Media assets are
+visible in this view.</p>
+</blockquote></li>
+<li><p>Click <strong>Create Template</strong> (top right). A modal
+dialog opens.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/create_template.png" width="480"/></p></li>
+<li><p>Enter a template name using your initials, for example
+<em>rf_template</em>, and leave the canvas size at the default 500x500.
+The template editor opens.</p></li>
+<li><p>Take a moment to <strong>explore the user interface</strong>,
+particularly the buttons in the right menu, for <strong>accessing
+assets, adding text, managing layers and adding shapes</strong>. You can
+undo anything you create with the <em>undo</em> icon in the left menu or
+Ctrl+Z (Windows), Cmd+Z (Mac).</p></li>
+</ol>
+<blockquote>
+<p>Note that the search will only show assets that have been processed
+for use with Dynamic Media. You may not see all assets on the
+system.</p>
+</blockquote>
+<h4 id="recreate-the-existing-basic-logo">Recreate the existing basic
+logo</h4>
+<p>First recreate the existing logo: a simple black WKND SVG roughly in
+the middle of the canvas.</p>
+<ol type="1">
+<li><p>Use the <strong>shapes</strong> menu to add a white rectangle,
+then adjust it to cover the entire canvas.</p></li>
+<li><p>In the <strong>asset picker</strong>, search for
+<em>wknd-logo</em> and drag <strong>wknd-logo-dk.svg</strong> on to the
+canvas.</p></li>
+<li><p>Authors will want to <strong>move, resize and change the source
+image</strong>. Additionally the image should <strong>link to the WKND
+home page</strong>
+(<code>https://wknd.enablementadobe.com/us/en.html</code>). You can meet
+these requirements by exposing the appropriate properties as
+<strong>parameters</strong> as shown below (layer properties /
+parameters tabs)</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/logo_cta.png" width="200"/></p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/logo_parameters.png" width="200"/></p></li>
+</ol>
+<h4 id="select-the-background-image">Select the background image</h4>
+<ol type="1">
+<li><p>Upload one of the images from the activity-files/dm_templates
+folder in to your folder in <em>Training Assets</em> (or choose a
+background image of your own).</p></li>
+<li><p>Back in the Template editor, use the asset browser from the icon
+in the right column to find and drag your uploaded image on to the
+canvas.</p></li>
+<li><p>Resize the image to cover the canvas.</p></li>
+<li><p>In the left menu of the editor, reorder your layers so that the
+WKND logo is at the front.</p></li>
+<li><p>Make the source of the image a parameter so that the authors can
+dynamically change the image.</p></li>
+</ol>
+<p>At this stage you should have a usable banner, similar to the one
+shown in the screenshot below (depending on which image you chose):</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/example_banner.png" width="420"/></p>
+<h4 id="preview-the-image-and-test-parameters">Preview the image and
+test parameters</h4>
+<ol type="1">
+<li><p>Save the template then preview (both buttons on the top
+right).</p></li>
+<li><p>In the preview mode you can see and adjust the properties that
+are exposed as parameters. Try swapping the logo for the light version
+and moving it.</p></li>
+<li><p>Change some parameters, then click <strong>publish</strong>, and
+<strong>copy URL</strong>.</p>
+<p><img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/copy_url3.jpg" width="420"/></p></li>
+<li><p>Examine the URL. Notice that the parameters you chose are
+included in the URL. Removing or changing them will allow you (and the
+authors) to dynamically change the image.</p></li>
+<li><p>Paste the URL into a browser tab and request the image.</p></li>
+</ol>
+<blockquote>
+<p>If you get an error, it is likely that one or more of the constituent
+assets have not been published. Check and publish as necessary.</p>
+</blockquote>
   </body>
 </html>

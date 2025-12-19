@@ -22,3 +22,9 @@ FILE: /home/runner/workspace/cli/modules/m1-introduction/introduction.md.temp
  21 links checked. 
 
   
+FILE: /home/runner/workspace/cli/modules/m4-dm_templates/dm_templates.md.temp 
+ [x] #course-contents is dead 
+
+ 9 links checked. 
+
+  

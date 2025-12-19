@@ -11,7 +11,7 @@ input:
   ../../modules/m3-productivity/productivity.md:
     replace:
       \[#\]: 3
-  ../../modules/m4-dm_templates/.md:
+  ../../modules/m4-dm_templates/dm_templates.md:
     replace:
       \[#\]: 4
 noYAML: true

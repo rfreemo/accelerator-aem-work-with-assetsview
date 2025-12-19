@@ -11,10 +11,13 @@ input:
   ../../modules/m3-productivity/productivity.md:
     replace:
       \[#\]: 3
+  ../../modules/m4-dm_templates/.md:
+    replace:
+      \[#\]: 4
 noYAML: true
 doctoc: true
 replace:
-  <!--{timestamp}-->: 12/17/2025
+  <!--{timestamp}-->: 12/19/2025
   <!--{copyrightYear}-->: '2025'
   <!--{returnToMainTOC}-->: '[Return to Course Contents](#course-contents)'
   <!--{courseType}-->: Activity Guide

@@ -20,11 +20,11 @@ The **My Workspace > Quick Assets** panel in Assets View gives you quick access 
 
       <img alt="screenshot of exercise" src="assets/myworkspace.png" width="200"/>
 
-2. Now navigate to **Assets > WKND Shared > English > Activities**
+2. Now navigate to **Assets \> WKND Shared \> English \> Activities**
 
-   > You may still be in the List view from a previous exercise.  To make your system look like the screenshots, you can return to Grid View, use the view switcher (top right of the main panel) 
+   > You may still be in the **List view** from a previous exercise.  To make your system look like the screenshots, you can return to **Grid View**, use the view switcher (top right of the main panel) 
 
-3. Hover over the *hiking* folder tile, click the **ellipsis (⋮)** icon, and select **Pin to Quick Access**.
+3. Hover over the *hiking* folder tile, click the **ellipsis**, and select **Pin to Quick Access**.
 
       <img alt="screenshot of exercise" src="assets/pin_folder_menu.png" width="480"/>
 
@@ -34,24 +34,23 @@ The **My Workspace > Quick Assets** panel in Assets View gives you quick access 
 
       <img alt="screenshot of exercise" src="assets/my_pinned_items.png" width="320"/>
 
-6. Click on the **ellipsis (⋮)** in your pinned item and click **Open in a new tab**. 
+6. Click on the **ellipsis** in your pinned item and click **Open in a new tab**. 
 
       <img alt="screenshot of exercise" src="assets/open_pinned_item.png" width="420"/>
 
-7. The *hiking* folder opens.  Click the **ellipsis (⋮)** under an image you like and choose **Pin to Quick Access**, in the same way that you added a folder in a previous step.
+7. The *hiking* folder opens.  Click the **ellipsis** under an image you like and choose **Pin to Quick Access**, in the same way that you added a folder in a previous step.
 
 8. Once again choose to pin **For Myself** and then view the results in your Quick Access area (_My Workspace > Quick Access_).
 
-> 💡 *Pinning assets "For Myself" is similar to the “lightbox” functionality of the older Admin View assets interface*
+> *Pinning assets _For Myself_ is similar to the _lightbox_ functionality of the older Admin View assets interface*
 
 ### Activity [#]-2: Use Notifications to Track Asset Activity
 
-You can receive notifications whenever assets you care about are updated, published, or have metadata changes.  
-Here you’ll _watch_ a folder, then trigger a notification later when we publish an updated image.
+You can receive notifications whenever assets you care about are updated, published, or have metadata changes.  Here you’ll _watch_ a folder, then trigger a notification later when we publish an updated image.
 
 1. Navigate to the *Training Assets* folder.
 
-2. (Tip:  Read the next step before completing this one!) Select your folder (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the and of the bar a shown in the screenshot below.
+2. (Tip:  Read the next step before completing this one!) Select your folder (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
    
       <img alt="screenshot of exercise" src="assets/watch.png" width="480"/>
    
@@ -69,7 +68,7 @@ Here you’ll _watch_ a folder, then trigger a notification later when we publis
 
       <img alt="watched assets" src="assets/watched_assets.png" width="220"/>
 
-> 🔔 We’ll trigger this subscription later when you publish or edit assets in a later module.
+> We’ll trigger this subscription later when you publish or edit assets in a later module.
 
 ### Activity [#]-3: Insights and Reporting
 
@@ -98,7 +97,7 @@ In this activity, you’ll open the Insights view and review the available chart
 
 Collections let you group related assets — for example, all images you plan to use in an upcoming campaign — without moving the original files.
 
-1. We'll start by creating an empty Collection.  Click on the Collections icon in the sidebar, then **Create a Collection**.  Give you collection a simple name susch as _your-initials-_Collection, select the **private** open and click **Create**.
+1. We'll start by creating an empty Collection.  Click on the Collections icon in the sidebar, then **Create a Collection**.  Give you collection a simple name such as _your-initials-_Collection, select the **private** open and click **Create**.
 
       <img alt="" src="assets/create_collection.png" width="420"/>
 
@@ -113,7 +112,7 @@ Collections let you group related assets — for example, all images you plan to
 3. Navigate again to **Collections**.You see your chosen images.
 
 >  Note that the images are **not** copies of the originals.  The collection is a kind of virtual folder containing only references to the original images.  For example you can delete a Collection without the contained images being deleted from the system.
-> A collection is not as fully featured as a genuined folder.  For example a Collection cannot be used for bulk operations such as applying metadata, nor can a Metadata Form be applied to a Collection.
+> A collection is not as fully featured as a genuine folder.  For example a Collection cannot be used for bulk operations such as applying metadata, nor can a Metadata Form be applied to a Collection.
 
 #### Investigate collection permissions
 
@@ -136,9 +135,12 @@ You can share a collection, folder or individual asset as a secure link — usef
       <img alt="" src="assets/share_link.png" width="240"/>
 
 2. Copy the link from the link share dialog, and note that the link has a unique ID.  It is not just a simple path to the entity that you shared, and does have an expiry time which you can set at this point.
+
 3. Open an incognito window, or a different browser in which you are **NOT logged in** with an Adobe account.  
-4. Past the shared link into the address bar.  Notice the link is to an author URL such as: ```https://author-p123456-e123456.adobeaemcloud.com/linkshare.html?sh=_long_unique_id```, and all content on an author instance would normally require authentication.
-5. Click return and see tha image is visible and can be downloaded by your simulated **unauthenticated user** in the Link Share viewer
+
+4. Paste the shared link into the address bar.  Notice the link is to an author URL such as: ```https://author-p123456-e123456.adobeaemcloud.com/linkshare.html?sh=_long_unique_id```, and all content on an author instance would normally require authentication.
+
+5. Click return and see that image is visible and can be downloaded by your simulated **unauthenticated user** in the Link Share viewer
 
       <img alt="" src="assets/linkshare.png" width="340"/>
 

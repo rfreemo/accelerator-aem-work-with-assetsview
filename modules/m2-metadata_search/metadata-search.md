@@ -18,11 +18,14 @@ In this module, you will:
 
 ### Activity [#]-1:  Access Metadata
 
-1. In the Assets View UI click the information icon in the details panel, inspect the **metadata** in the *Basic* and *Advanced* tabs.  The fields are the defaults provided by Adobe.
+1. In the Assets View UI click the information icon in the details panel of your image, inspect the **metadata** in the *Basic* and *Advanced* tabs.  The metadata fields you see are the defaults provided by Adobe, and reveal commonly used information such as the image description.
 
-2. The image has much more metadata that you do not currently see.  You can see **some** of this 'hidden' metadata by downloading the image and inspecting it on your computer (seeing **all** metadata is beyond the scope of the exercise)
+      <img alt="screenshot of exercise" src="assets/info.png" width="320"/>
+
+2. The image has much more metadata that you do not currently see.  You can see **some** of this 'hidden' metadata by inspecting the source image in the activity-files.  Do the following:
    - In MacOS right-click on the image and click on **Get info** (result as in the screenshot below)
    - In Windows 11, right-click, then choose **Properties**, then **Details**.
+   You will see the following:
 
       <img alt="screenshot of exercise" src="assets/metadata.png" width="400"/>
 
@@ -61,6 +64,8 @@ In this module, you will:
 
 7. As your form is named neither *default* nor a MIME type, it will not be used anywhere yet.
 
+   > A MIME type simply tells the system what kind of file an asset is, which determines what metadata can be stored and used—for example, PNG and JPG images have image-related metadata (like dimensions or color profile), while a PDF has document-related metadata (like pages, text, and author).
+
 8. Now assign your form to your folder in Training Assets by clicking **Assign to Folders** in the blue header bar, then selecting **your folder** and clicking **Assign**.
 
    <img alt="screenshot of exercise" src="assets/assign.png" width="602"/>
@@ -69,7 +74,7 @@ In this module, you will:
 
 10. Return to your folder and upload in to your folder the **test.pdf** file in your Exercise_Files.
 
-11. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specifc, metadata form than an image.  An example issue us that photoshop:City is irrelevant for a PDF.
+11. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specific, metadata form.  An example issue is that photoshop:City is irrelevant for a PDF.
 
 ### Activity [#]-3:  Metadata challenge! 
 
@@ -89,7 +94,7 @@ In this module, you will:
 
 3. Click the back arrow (ideally in Assets View, not the browser back button).
 
-4. If not already enabled, enabled the contextual search functionality using the toggle to the right of the search field.
+4. If not already done, enable the contextual search functionality using the toggle to the right of the search field.
 
    <img alt="screenshot of exercise" src="assets/search_toggle.png" width="351"/>
 
@@ -99,6 +104,6 @@ In this module, you will:
 
 7. Experiment with natural language searches to explore the limits of the contextual search.   
 
-   > It is possible to add a custom filter to the search, for example the photoshop:City.  We will not do this as it is a central configuration that we cannot change without conflict on the training system.  In reality it will be managed by an administrator, or power user. You should just remember that configuration of search filters is possible, and straight-forward in most cases.
+   > It is possible to add a custom filter to the search, for example the photoshop:City.  We will not do this as it is a central configuration that we cannot change without conflict on the training system.  In reality it will be managed by an administrator, or power user. You should just remember that configuration of search filters is possible, and straightforward in most cases.
 
 

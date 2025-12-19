@@ -7,7 +7,7 @@ FILE: /home/runner/workspace/cli/modules/m2-metadata_search/metadata-search.md.t
  [x] #activity-2-3--metadata-challenge is dead 
  [x] #course-contents is dead 
 
- 12 links checked. 
+ 13 links checked. 
 
   
 FILE: /home/runner/workspace/cli/modules/m3-productivity/productivity.md.temp 
@@ -19,6 +19,6 @@ FILE: /home/runner/workspace/cli/modules/m3-productivity/productivity.md.temp
 FILE: /home/runner/workspace/cli/modules/m1-introduction/introduction.md.temp 
  [x] #course-contents is dead 
 
- 23 links checked. 
+ 21 links checked. 
 
   

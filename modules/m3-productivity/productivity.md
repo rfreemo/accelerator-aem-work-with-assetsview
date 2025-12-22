@@ -50,7 +50,7 @@ You can receive notifications whenever assets you care about are updated, publis
 
 1. Navigate to the *Training Assets* folder.
 
-2. (Tip:  Read the next step before completing this one!) Select your folder (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
+2. (Tip:  Read the next step before completing this one!) Select one or more of your fellow students' folders (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
    
       <img alt="screenshot of exercise" src="assets/watch.png" width="480"/>
    
@@ -62,13 +62,17 @@ You can receive notifications whenever assets you care about are updated, publis
 
       <img alt="screenshot of exercise" src="assets/xc_notifications.png" width="380"/>
 
-5. Close the tab containing the notifications settings, so returning to the Assets View UI.
+5. In the **Priority** section of the preferences, add the category _Updates on subscribed folders and collections_ if not already present.  Look at the **Alerts** section (below _Priority_) to see that this will result in you receiving popup notifications for your chosen high-priority categories.
 
-6. Click the **Watched Assets** link in the left menu bar.  Select the watched folder to see a list of your watches.
+      <img alt="watched assets" src="assets/notification-priority.png" width="420"/>
+
+6. Close the tab containing the notifications settings, so returning to the Assets View UI.
+
+7. Click the **Watched Assets** link in the left menu bar.  Select the watched folder to see a list of your watches.
 
       <img alt="watched assets" src="assets/watched_assets.png" width="220"/>
 
-> We’ll trigger this subscription later when you publish or edit assets in a later module.
+> As we proceed through the exercises you will reveive notification of the activity in your watched items and the bell symbol in the header will be highlighted to alert you to this.
 
 ### Activity [#]-3: Insights and Reporting
 
@@ -81,7 +85,7 @@ In this activity, you’ll open the Insights view and review the available chart
 
 1. From the left navigation pane, click the Insights *graph icon*.
 
-      <img alt="watched assets" src="assets/insights.png" width="220"/>
+      <img alt="watched assets" src="assets/insights.png" width="180"/>
 
    The Insights page opens, displaying automatically generated charts based on asset usage.
 
@@ -122,9 +126,7 @@ Collections let you group related assets — for example, all images you plan to
 
 2. Note that you have automatically been added as the Collection owner.
 
-      <img alt="" src="assets/collections_permissions.png" width="240"/>
-
-3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  To do this the next section, sharing, may come in useful!
+3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  The next section, sharing, may come in useful for this!
 
 ### Activity [#]-5: Sharing links
 

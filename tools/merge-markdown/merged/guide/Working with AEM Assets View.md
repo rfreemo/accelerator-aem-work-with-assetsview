@@ -1,7 +1,7 @@
 ---
 title: Working with AEM Assets View
 author: Rob Freeman
-date: 12/19/2025
+date: 12/22/2025
 creator: Adobe Digital Learning Services
 subject: Instructor Led Training
 ---
@@ -36,7 +36,7 @@ Adobe, 345 Park Avenue, San Jose, California 95110, USA.
 </br></br>
 Notice to U.S. Government End Users. The Software and Documentation are “Commercial Items,” as that term is defined at 48 C.F.R. §2.101, consisting of “Commercial Computer Software” and “Commercial Computer Software Documentation,” as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §§227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright laws of the United States. Adobe agrees to comply with all applicable equal opportunity laws including, if appropriate, the provisions of Executive Order 11246, as amended, Section 402 of the Vietnam Era Veterans Readjustment Assistance Act of 1974 (38 USC 4212), and Section 503 of the Rehabilitation Act of 1973, as amended, and the regulations at 41 CFR Parts 60-1 through 60-60, 60-250, and 60-741. The affirmative action clause and regulations contained in the preceding sentence shall be incorporated by reference.
 </br></br></br></br>
-<div class="last-updated">12/19/2025</div>
+<div class="last-updated">12/22/2025</div>
 </div>
 <div class="page-break"></div>
 
@@ -49,7 +49,6 @@ Notice to U.S. Government End Users. The Software and Documentation are “Comme
 - [Module 1: Introduction to Assets View and Metadata](#module-1-introduction-to-assets-view-and-metadata)
     - [Activity 1-1: Upload, Edit and Versions](#activity-1-1-upload-edit-and-versions)
     - [Activity 1-2: Renditions and Publish](#activity-1-2-renditions-and-publish)
-    - [Activity 1-3: Delete and Restore the image](#activity-1-3-delete-and-restore-the-image)
 - [Module 2: Metadata and Search](#module-2-metadata-and-search)
     - [Activity 2-1:  Access Metadata](#activity-2-1--access-metadata)
     - [Activity 2-2: Apply Metadata Forms](#activity-2-2-apply-metadata-forms)
@@ -84,7 +83,6 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 - [Activity 1-1: Upload, Edit and Versions](#activity-1-1-upload-edit-and-versions)
 - [Activity 1-2: Renditions and Publish](#activity-1-2-renditions-and-publish)
-- [Activity 1-3: Delete and Restore the image](#activity-1-3-delete-and-restore-the-image)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 [Return to Course Contents](#course-contents)
@@ -210,7 +208,7 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/dynamic_renditions_published.png" width="480"/>
 
-### Activity 1-3: Delete and Restore the image
+#### Delete and Restore 
 
 1. Navigate to your folder and use the ellipsis menu to delete your test image, clicking first on the **delete** button in the menu, then again on the delete button in the modal confirmation layer.  The image is removed from the UI.
 
@@ -410,7 +408,7 @@ You can receive notifications whenever assets you care about are updated, publis
 
 1. Navigate to the *Training Assets* folder.
 
-2. (Tip:  Read the next step before completing this one!) Select your folder (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
+2. (Tip:  Read the next step before completing this one!) Select one or more of your fellow students' folders (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
    
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watch.png" width="480"/>
    
@@ -422,13 +420,17 @@ You can receive notifications whenever assets you care about are updated, publis
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/xc_notifications.png" width="380"/>
 
-5. Close the tab containing the notifications settings, so returning to the Assets View UI.
+5. In the **Priority** section of the preferences, add the category _Updates on subscribed folders and collections_ if not already present.  Look at the **Alerts** section (below _Priority_) to see that this will result in you receiving popup notifications for your chosen high-priority categories.
 
-6. Click the **Watched Assets** link in the left menu bar.  Select the watched folder to see a list of your watches.
+      <img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/notification-priority.png" width="420"/>
+
+6. Close the tab containing the notifications settings, so returning to the Assets View UI.
+
+7. Click the **Watched Assets** link in the left menu bar.  Select the watched folder to see a list of your watches.
 
       <img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watched_assets.png" width="220"/>
 
-> We’ll trigger this subscription later when you publish or edit assets in a later module.
+> As we proceed through the exercises you will reveive notification of the activity in your watched items and the bell symbol in the header will be highlighted to alert you to this.
 
 ### Activity 3-3: Insights and Reporting
 
@@ -441,7 +443,7 @@ In this activity, you’ll open the Insights view and review the available chart
 
 1. From the left navigation pane, click the Insights *graph icon*.
 
-      <img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/insights.png" width="220"/>
+      <img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/insights.png" width="180"/>
 
    The Insights page opens, displaying automatically generated charts based on asset usage.
 
@@ -482,9 +484,7 @@ Collections let you group related assets — for example, all images you plan to
 
 2. Note that you have automatically been added as the Collection owner.
 
-      <img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/collections_permissions.png" width="240"/>
-
-3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  To do this the next section, sharing, may come in useful!
+3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  The next section, sharing, may come in useful for this!
 
 ### Activity 3-5: Sharing links
 
@@ -550,7 +550,7 @@ The scenario for this is:
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m4-dm_templates/assets/create_template.png" width="480"/>
    
-4. Enter a template name using your initials, for example _rf_template_, and leave the canvas size at the default 500x500.  The template editor opens.
+4. Enter a template name using your initials, for example _rf_template_, and set the canvas size to 320 x 200.  The template editor opens.
 
 5. Take a moment to **explore the user interface**, particularly the buttons in the right menu, for **accessing assets, adding text, managing layers and adding shapes**.  You can undo anything you create with the _undo_ icon in the left menu or Ctrl+Z (Windows), Cmd+Z (Mac). 
 

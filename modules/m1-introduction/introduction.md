@@ -132,7 +132,7 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
       <img alt="screenshot of exercise" src="assets/dynamic_renditions_published.png" width="480"/>
 
-### Activity [#]-3: Delete and Restore the image
+#### Delete and Restore 
 
 1. Navigate to your folder and use the ellipsis menu to delete your test image, clicking first on the **delete** button in the menu, then again on the delete button in the modal confirmation layer.  The image is removed from the UI.
 

@@ -38,7 +38,7 @@ The scenario for this is:
 
       <img alt="screenshot of exercise" src="assets/create_template.png" width="480"/>
    
-4. Enter a template name using your initials, for example _rf_template_, and leave the canvas size at the default 500x500.  The template editor opens.
+4. Enter a template name using your initials, for example _rf_template_, and set the canvas size to 320 x 200.  The template editor opens.
 
 5. Take a moment to **explore the user interface**, particularly the buttons in the right menu, for **accessing assets, adding text, managing layers and adding shapes**.  You can undo anything you create with the _undo_ icon in the left menu or Ctrl+Z (Windows), Cmd+Z (Mac). 
 

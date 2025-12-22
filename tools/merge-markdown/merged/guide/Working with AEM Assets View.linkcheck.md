@@ -13,12 +13,6 @@ FILE: /home/runner/workspace/cli/modules/m2-metadata_search/metadata-search.md.t
 FILE: /home/runner/workspace/cli/modules/m3-productivity/productivity.md.temp 
  [x] #course-contents is dead 
 
- 20 links checked. 
-
-  
-FILE: /home/runner/workspace/cli/modules/m1-introduction/introduction.md.temp 
- [x] #course-contents is dead 
-
  21 links checked. 
 
   
@@ -26,5 +20,11 @@ FILE: /home/runner/workspace/cli/modules/m4-dm_templates/dm_templates.md.temp
  [x] #course-contents is dead 
 
  9 links checked. 
+
+  
+FILE: /home/runner/workspace/cli/modules/m1-introduction/introduction.md.temp 
+ [x] #course-contents is dead 
+
+ 20 links checked. 
 
   

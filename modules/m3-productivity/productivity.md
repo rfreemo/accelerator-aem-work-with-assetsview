@@ -128,6 +128,20 @@ Collections let you group related assets — for example, all images you plan to
 
 3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  The next section, sharing, may come in useful for this!
 
+#### Challenge: Being Smart!
+
+In this small challenge we will try out Smart Collections and Smart Tagging.    
+
+1. Create a [Smart Collection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/manage-collections-assets-view#manage-smart-collection) bnased on one of the sporting/outdoor themes in the **WKND Shared** folder (e.g., camping, cycling, surfing..).  
+
+3. Using a search engine find a suitable test image for this topic on the internet, with a clear subject (so for 'cycling' chose something with a clear bicycle). 
+
+4. Test your collection and [Smart Tagging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/smart-tags) by **uploading a screenshot** of the test image in to **your folder** in Training Asset (the screenshot hack will ensure that the test image has no topic-specififc metadata or naming).
+
+Has your image been added to your Smart Collection?  Is the metadata-less image now included?
+
+Bonus question: How can you achieve remove images from the Smart Collection? (don't spend more than a couple of minutes on answering this)
+
 ### Activity [#]-5: Sharing links
 
 You can share a collection, folder or individual asset as a secure link — useful for review or external collaboration.

@@ -17,7 +17,7 @@ input:
 noYAML: true
 doctoc: true
 replace:
-  <!--{timestamp}-->: 12/22/2025
+  <!--{timestamp}-->: 12/24/2025
   <!--{copyrightYear}-->: '2025'
   <!--{returnToMainTOC}-->: '[Return to Course Contents](#course-contents)'
   <!--{courseType}-->: Activity Guide

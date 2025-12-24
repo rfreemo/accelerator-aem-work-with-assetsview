@@ -76,7 +76,7 @@ In this module, you will:
 
 11. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specific, metadata form.  An example issue is that photoshop:City is irrelevant for a PDF.
 
-### Activity [#]-3:  Metadata challenge! 
+#### Challenge:  Mixed MIME types and Metadata Forms 
 
 1. Solve this problem of the PDF file having the metadata configuration of an image.  Your PDF and your Image should be able to exist inside your folder or child-folder(s), but with different, MIME-type appropriate, metadata fields.  The PDF should have the default PDF metadata visible, and the image should have your custom metadata visible.
 
@@ -84,7 +84,7 @@ In this module, you will:
    > - The name of the default Metadata Form for a PDF form is _application_. 
    > - Key point: you cannot apply multiple Metadata Forms to a folder.
 
-### Activity [#]-4: Search
+### Activity [#]-3: Search
 
 1. Click on the search icon at the top of the left panel.
 
@@ -105,5 +105,9 @@ In this module, you will:
 7. Experiment with natural language searches to explore the limits of the contextual search.   
 
    > It is possible to add a custom filter to the search, for example the photoshop:City.  We will not do this as it is a central configuration that we cannot change without conflict on the training system.  In reality it will be managed by an administrator, or power user. You should just remember that configuration of search filters is possible, and straightforward in most cases.
+
+#### The Search Challenge - Where is a result stored?
+
+Search all assets for the term _surfing_.  Choose an interesting image and identify two quick ways to find where that image is stored, i.e. in which folder, without manually browsing through the folder structure, or using _switch view_.
 
 

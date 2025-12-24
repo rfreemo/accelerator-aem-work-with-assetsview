@@ -1,7 +1,7 @@
 ---
 title: Working with AEM Assets View
 author: Rob Freeman
-date: 12/22/2025
+date: 12/24/2025
 creator: Adobe Digital Learning Services
 subject: Instructor Led Training
 ---
@@ -36,7 +36,7 @@ Adobe, 345 Park Avenue, San Jose, California 95110, USA.
 </br></br>
 Notice to U.S. Government End Users. The Software and Documentation are “Commercial Items,” as that term is defined at 48 C.F.R. §2.101, consisting of “Commercial Computer Software” and “Commercial Computer Software Documentation,” as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §§227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright laws of the United States. Adobe agrees to comply with all applicable equal opportunity laws including, if appropriate, the provisions of Executive Order 11246, as amended, Section 402 of the Vietnam Era Veterans Readjustment Assistance Act of 1974 (38 USC 4212), and Section 503 of the Rehabilitation Act of 1973, as amended, and the regulations at 41 CFR Parts 60-1 through 60-60, 60-250, and 60-741. The affirmative action clause and regulations contained in the preceding sentence shall be incorporated by reference.
 </br></br></br></br>
-<div class="last-updated">12/22/2025</div>
+<div class="last-updated">12/24/2025</div>
 </div>
 <div class="page-break"></div>
 
@@ -52,8 +52,7 @@ Notice to U.S. Government End Users. The Software and Documentation are “Comme
 - [Module 2: Metadata and Search](#module-2-metadata-and-search)
     - [Activity 2-1:  Access Metadata](#activity-2-1--access-metadata)
     - [Activity 2-2: Apply Metadata Forms](#activity-2-2-apply-metadata-forms)
-    - [Activity 2-3:  Metadata challenge!](#activity-2-3--metadata-challenge)
-    - [Activity 2-4: Search](#activity-2-4-search)
+    - [Activity 2-3: Search](#activity-2-3-search)
 - [Module 3: Productivity](#module-3-productivity)
     - [Activity 3-1: My Workspace and Quick Access](#activity-3-1-my-workspace-and-quick-access)
     - [Activity 3-2: Use Notifications to Track Asset Activity](#activity-3-2-use-notifications-to-track-asset-activity)
@@ -248,8 +247,7 @@ In this module, you will:
 
 - [Activity 2-1:  Access Metadata](#activity-2-1--access-metadata)
 - [Activity 2-2: Apply Metadata Forms](#activity-2-2-apply-metadata-forms)
-- [Activity 2-3:  Metadata challenge!](#activity-2-3--metadata-challenge)
-- [Activity 2-4: Search](#activity-2-4-search)
+- [Activity 2-3: Search](#activity-2-3-search)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 [Return to Course Contents](#course-contents)
@@ -315,7 +313,7 @@ In this module, you will:
 
 11. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specific, metadata form.  An example issue is that photoshop:City is irrelevant for a PDF.
 
-### Activity 2-3:  Metadata challenge! 
+#### Challenge:  Mixed MIME types and Metadata Forms 
 
 1. Solve this problem of the PDF file having the metadata configuration of an image.  Your PDF and your Image should be able to exist inside your folder or child-folder(s), but with different, MIME-type appropriate, metadata fields.  The PDF should have the default PDF metadata visible, and the image should have your custom metadata visible.
 
@@ -323,7 +321,7 @@ In this module, you will:
    > - The name of the default Metadata Form for a PDF form is _application_. 
    > - Key point: you cannot apply multiple Metadata Forms to a folder.
 
-### Activity 2-4: Search
+### Activity 2-3: Search
 
 1. Click on the search icon at the top of the left panel.
 
@@ -344,6 +342,10 @@ In this module, you will:
 7. Experiment with natural language searches to explore the limits of the contextual search.   
 
    > It is possible to add a custom filter to the search, for example the photoshop:City.  We will not do this as it is a central configuration that we cannot change without conflict on the training system.  In reality it will be managed by an administrator, or power user. You should just remember that configuration of search filters is possible, and straightforward in most cases.
+
+#### The Search Challenge - Where is a result stored?
+
+Search all assets for the term _surfing_.  Choose an interesting image and identify two quick ways to find where that image is stored, i.e. in which folder, without manually browsing through the folder structure, or using _switch view_.
 
 
 
@@ -485,6 +487,20 @@ Collections let you group related assets — for example, all images you plan to
 2. Note that you have automatically been added as the Collection owner.
 
 3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  The next section, sharing, may come in useful for this!
+
+#### Challenge: Being Smart!
+
+In this small challenge we will try out Smart Collections and Smart Tagging.    
+
+1. Create a [Smart Collection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/manage-collections-assets-view#manage-smart-collection) bnased on one of the sporting/outdoor themes in the **WKND Shared** folder (e.g., camping, cycling, surfing..).  
+
+3. Using a search engine find a suitable test image for this topic on the internet, with a clear subject (so for 'cycling' chose something with a clear bicycle). 
+
+4. Test your collection and [Smart Tagging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/smart-tags) by **uploading a screenshot** of the test image in to **your folder** in Training Asset (the screenshot hack will ensure that the test image has no topic-specififc metadata or naming).
+
+Has your image been added to your Smart Collection?  Is the metadata-less image now included?
+
+Bonus question: How can you achieve remove images from the Smart Collection? (don't spend more than a couple of minutes on answering this)
 
 ### Activity 3-5: Sharing links
 

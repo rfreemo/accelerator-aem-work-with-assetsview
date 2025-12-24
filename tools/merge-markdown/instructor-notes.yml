@@ -16,6 +16,6 @@ replace:
     subtitle: <!--{title}-->
     ---
   <!--{intro-paragraph}-->: Last auto-generated <!--{timestamp}-->  by [merge-markdown](https://github.com/knennigtri/merge-markdown).
-  <!--{timestamp}-->: 12/22/2025
+  <!--{timestamp}-->: 12/24/2025
   <!--{title}-->: Working with AEM Assets View
   <!--{subject}-->: Instructor Guide notes

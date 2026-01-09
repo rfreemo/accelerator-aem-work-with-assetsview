@@ -19,13 +19,14 @@ In this module, you will practice the basic usage of the Assets View interface, 
 1. Open *Experience Manager Assets* from the chocolate bar menu.
 
 2. Navigate to *Asset Management \> Assets \> WKND Shared \> English \> Training Assets* and use the **Create Folder** button to create a folder using your first name and an initial, if necessary, e.g., _RobF_.
+
       <img alt="screenshot of exercise" src="assets/image2.jpeg" width="480"/>
 
-3. **Drag and drop** the exercise image from the *Exercise_Files* folder on to your newly created folder. The _Upload Files_ modal dialog appears.
+3. **Drag and drop** the image _landscape_image_metadata_test.jpg_ from the **activity-files** folder (shared with you by your instructor) on to your newly created folder. The _Upload Files_ modal dialog appears.
 
-4. Leave the checkbox _Publish to AEM and Dynamic Media_ **unchecked**.  
+4. Leave the checkbox _Publish to AEM and Dynamic Media_ **unchecked** and click **upload**.  
 
-   <img alt="screenshot of exercise" src="assets/upload.png" width="357"/>
+      <img alt="screenshot of exercise" src="assets/upload.png" width="357"/>
 
 5. A green bar and success message is shown if the upload was successful, and a placeholder image should be shown shortly afterwards with a ***Processing*** label. The asset is being processed by AEM as a Cloud Service *Asset Microservices*. **Be patient** - this process can take more than a minute to complete.
 
@@ -33,13 +34,15 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
       <img alt="screenshot of exercise" src="assets/image6.png" width="357"/>
 
+> In the next step you may see an error page when you try to access Adobe Express. If so refresh the page (Cmd + R or Ctrl + R) then log in again using the same VLab user.  At the time of writing the integration with Express is not perfect!
+
 7. Choose **Edit**. A limited version of **Adobe Express** will open. **Make any change**, such as cropping your image.
 
 8. Click **Save** As, then **Version**.
 
       <img alt="screenshot of exercise" src="assets/image7.png" width="480"/>
 
-9. Image processing starts, as happened when you first uploaded the image. Click the **back arrow** to the folder.
+9. Image processing starts, as happened when you first uploaded the image. Click the **back arrow** shown below to return to the folder.
 
       <img alt="screenshot of exercise" src="assets/image8.png" width="244"/>
 
@@ -47,7 +50,7 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 1. Once processing has completed, **double-click on the asset** to open it and click the 'Versions' (clock) icon in the right toolbar.
 
-   <img alt="screenshot of exercise" src="assets/image9.png" width="321"/>
+      <img alt="screenshot of exercise" src="assets/image9.png" width="321"/>
 
 2. Select a previous version (the original).  The image area now shows the side-by-side comparison tool.  Use this to inspect the changes made in Adobe Express.
 
@@ -80,7 +83,7 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 #### Publish 
 
-1. Open the test image by double clicking on it.
+1. If not already open from the previous exercise, open the test image __detail view__ again. 
 
 2. Use the **Switch View** link to change to the same image in the **Admin View** ('traditional' Experience Manager).
 
@@ -100,23 +103,23 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 6. In the Experience Manager editor use the **switch view** to move from Admin View back to Assets View.
 
-7. Navigate to the containing folder (_Training Assets_, select the image and click **publish** in the blue actions bar.
+7. Navigate to the containing folder, select the image and click **publish** in the blue actions bar.
 
-   <img alt="screenshot of exercise" src="assets/publish.png" width="480"/>
+      <img alt="screenshot of exercise" src="assets/publish.png" width="480"/>
 
 8. Select the _AEM_ checkbox in the modal dialog and **publish**.  A green notification panel will confirm that the image was published.
 
-   <img alt="screenshot of exercise" src="assets/publish_modal.png" width="380"/>
+      <img alt="screenshot of exercise" src="assets/publish_modal.png" width="380"/>
 
-9. Once again enter the publish instance URL for the image in a new tab (the URL is **similar** to below).  This time there will be no _Not Found_ error and the published image will either open, or download.
+9. Once again enter the publish instance URL for the image in a new tab (the URL is **similar** to below).  This time there will be no _Not Found_ error and the published image will either open, or **download**.
 
    ```
    https://publish-p123456-e123456.adobeaemcloud.com/content/dam/wknd-shared/en/Training%20Assets/yourfolder/landscape_image_metadata_test.jpg
    ```
 
-10. Open the details panel of the test image and scroll to the bottom of the panel.  Note that the publish state and publishing time of the asset is shown.
+10. in Assets View, open the details panel of the test image and scroll to the bottom of the panel.  Note that the publish state and publishing time of the asset is shown.
 
-    <img alt="screenshot of exercise" src="assets/publishdata.png" width="380"/>
+      <img alt="screenshot of exercise" src="assets/publishdata.png" width="380"/>
 
 > The publish mechanism creates a copy of the asset on the Experience Manager publish server, and optionally 
 > to the Dynamic Media delivery server.  
@@ -126,11 +129,15 @@ In this module, you will practice the basic usage of the Assets View interface, 
 > We do not **approve** images in this exercise as we are not using one of the new delivery channels (Content Hub or the Dynamic Media API).
 > Approval is a metadata field that only becomes relevant when using these systems.
 
-#### Review Published Renditions
+#### Review Dynamic Renditions
 
 11. Once again look at the Dynamic Renditions of the image.  You will not see that you can copy the live URL of each rendition - click on **Copy URL** to do this and paste into a browser to view the image.
 
       <img alt="screenshot of exercise" src="assets/dynamic_renditions_published.png" width="480"/>
+
+> Note that the Dynamic Rendition URLs are not the same as the AEM published image that we saw earlier.  Instead they are URLs for a Dynamic Media server, including a URL modifier to request the required dynamic rendition.  For example ```https://s7g10.scene7.com/is/image/ADLSEMEA/landscape_image_metadata_test:Medium```shows the _Medium_ rendition.
+
+> The training AEM instance will publish assets to Dynamic Media by default, whenever an AEM publish action is triggered.
 
 #### Delete and Restore 
 
@@ -138,17 +145,18 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
       <img alt="screenshot of exercise" src="assets/delete_image.png" width="240"/>
 
-> In Admin View (Touch UI) delete is a final operation.  Without the restoration of a backup this cannot be undone.
-> Assets View is different and has a Trash folder. Images deleted using Assets View can be restored. 
+> In Admin View (Touch UI) delete is a final operation.  Without the restoration of a backup this cannot be undone. Assets View is different and has a Trash folder. Images deleted using Assets View can be restored. 
 
-2. As only asset and folder titles are visible in the Trash tile view, it can be difficult to find an image if there are others, as is likely the case if your fellow students have also deleted their test images.  To overcome this, change to the **list view** as shown below:
+2. Open the **Trash** folder using the Trash Can icon in the Assets View main menu (Assets Managenent \> Trash).
+
+3. As only asset and folder titles are visible in the Trash tile view, it can be difficult to find an image if there are others, as is likely the case if your fellow students have also deleted their test images.  To overcome this, change to the **list view** as shown below:
 
       <img alt="screenshot of exercise" src="assets/trash_tileview.png" width="480"/>
 
-3. Locate your deleted image, click the ellipsis and then **restore**.
+4. Locate your deleted image, click the ellipsis and then **restore**.
 
     <img alt="screenshot of exercise" src="assets/restore_image.png" width="220"/>
 
-4. Check your folder to be sure that the image was restored.
+5. Check your folder to be sure that the image was restored.
 
 

@@ -43,20 +43,20 @@ In this module, you will:
 
 3. Select the **checkbox** *use existing form structure as template* and the select *default* in the **Choose from** field. Click **Create**. The Metadata Form Editor is loaded. The fields shown are copied from the *default* form.
 
-      <img alt="screenshot of exercise" src="assets/image17.png" width="602"/>  
+      <img alt="screenshot of exercise" src="assets/image17.png" width="580"/>  
 
 4. We will make the metadata property _photoshop:City_ visible and editable in Assets View (photoshop:City is an Adobe metadata field that could conceivably be important for your company, as the location where the image was created or edited, however we are using it merely as an example without a defined use-case!).  Add a single-line text field to the bottom of the form, then configure the form using:
 
    - Metadata property: City (photoshop:City)
    - Label: Photoshop City
 
-      <img alt="screenshot of exercise" src="assets/metadatacity.png" width="602"/>
+      <img alt="screenshot of exercise" src="assets/metadatacity.png" width="580"/>
 
 5. Click **Save**, wait for a success message, then **Close** to exit the form editor.
 
 6. Now assign your form to your folder in Training Assets by clicking **Assign to Folders** in the blue header bar, then selecting **your folder** and clicking **Assign**.
 
-      <img alt="screenshot of exercise" src="assets/assign.png" width="602"/>
+      <img alt="screenshot of exercise" src="assets/assign.png" width="580"/>
 
 7. Navigate to your folder and open the training image detail view to see the metadata. Your modified metadata form has been applied and the field Photoshop City should now be visible, contain _Offenburg_ and be editable.  
 
@@ -70,7 +70,9 @@ The PDF file you uploaded in the previous exercise has the wrong metadata form a
 
 Your PDF and your Image should be able to exist inside your folder or child-folder(s), but with different, MIME-type appropriate, metadata fields.  The PDF should have the default PDF metadata visible, and the image should have your custom metadata visible.
 
-> Note: Assets does not support the assignment of multiple Metadata Forms to a folder, and assigned forms override any MIME type specific forms.  
+> Hint: Assets does not support the assignment of multiple Metadata Forms to a folder, and assigned forms override any MIME type specific forms.
+> Hint: the _Move_ function in the action menu can be used to move assets between folders.  On smaller screens it is folded into the elipsis menu.
+      <img alt="screenshot of exercise" src="assets/move.png" width="200"/>
 
 ### Activity [#]-3: Search
 

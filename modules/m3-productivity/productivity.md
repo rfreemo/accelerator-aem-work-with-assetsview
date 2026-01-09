@@ -14,7 +14,7 @@ In this module, you’ll explore productivity tools available in **Assets View**
 
 ### Activity [#]-1: My Workspace and Quick Access
 
-The **My Workspace > Quick Assets** panel in Assets View gives you quick access to the assets and folders you use most frequently. You can “pin” items to this view so they are always visible when you sign in.
+The **Quick Access** panel of **My Workspace** gives you quick access to the assets and folders you use most frequently. You can “pin” items to this view so they are always visible when you sign in.
 
 1. From the left navigation, select **My Workspace** to open your personalized workspace.  Notice the _Quick Access_ panel, which will probably be empty.
 
@@ -42,7 +42,7 @@ The **My Workspace > Quick Assets** panel in Assets View gives you quick access 
 
 8. Once again choose to pin **For Myself** and then view the results in your Quick Access area (_My Workspace > Quick Access_).
 
-> *Pinning assets _For Myself_ is similar to the _lightbox_ functionality of the older Admin View assets interface*
+> Pinning assets _For Myself_ is similar to the _lightbox_ functionality of the older Admin View assets interface
 
 ### Activity [#]-2: Use Notifications to Track Asset Activity
 
@@ -50,7 +50,7 @@ You can receive notifications whenever assets you care about are updated, publis
 
 1. Navigate to the *Training Assets* folder.
 
-2. (Tip:  Read the next step before completing this one!) Select one or more of your fellow students' folders (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
+2. (Tip:  Read the next step before completing this one!) Select one or more of your fellow students' folders and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
    
       <img alt="screenshot of exercise" src="assets/watch.png" width="480"/>
    
@@ -68,7 +68,7 @@ You can receive notifications whenever assets you care about are updated, publis
 
 6. Close the tab containing the notifications settings, so returning to the Assets View UI.
 
-7. Click the **Watched Assets** link in the left menu bar.  Select the watched folder to see a list of your watches.
+7. Click the **Watched Assets** link in the left menu bar to see a list of your watches.
 
       <img alt="watched assets" src="assets/watched_assets.png" width="220"/>
 
@@ -101,7 +101,7 @@ In this activity, you’ll open the Insights view and review the available chart
 
 Collections let you group related assets — for example, all images you plan to use in an upcoming campaign — without moving the original files.
 
-1. We'll start by creating an empty Collection.  Click on the Collections icon in the sidebar, then **Create a Collection**.  Give you collection a simple name such as _your-initials-_Collection, select the **private** open and click **Create**.
+1. We'll start by creating an empty Collection.  Click on the Collections icon in the sidebar, then the **Create Collection** button.  Give you collection a simple name such as _your-initials-_Collection, select the **private** open and click **Create**.
 
       <img alt="" src="assets/create_collection.png" width="420"/>
 
@@ -120,19 +120,24 @@ Collections let you group related assets — for example, all images you plan to
 
 #### Investigate collection permissions
 
-1. As you create a **private** collection, you can control the access rights to your collection.  To do this view your Collection in the Collections panel, and choose **Manage permissions** from the ellipsis menu.
+1. As you created a **private** collection, you can control the access rights to it.  To do this view your Collection in the Collections panel, and choose **Manage permissions** from the ellipsis menu.
 
       <img alt="" src="assets/collections_permissions.png" width="240"/>
 
 2. Note that you have automatically been added as the Collection owner.
 
-3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  The next section, sharing, may come in useful for this!
+3. Grant access rights to another user by searching for **vlab** in the _Groups & Users_ area, selecting an ADLS user and applying an access permission (click on the *+* button).
+
+      <img alt="" src="assets/grant_access.png" width="340"/>
 
 #### Challenge: Being Smart!
 
-In this small challenge we will try out Smart Collections and Smart Tagging.    
+In this small challenge we will try out Smart Collections and Smart Tagging.  
 
-1. Create a [Smart Collection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/manage-collections-assets-view#manage-smart-collection) bnased on one of the sporting/outdoor themes in the **WKND Shared** folder (e.g., camping, cycling, surfing..).  
+> If you need help, try out the AI Assistant by clicking on the speech bubble icon in the header. 
+<img alt="" src="assets/ai_assistant.png" width="580"/>
+
+1. Create a [Smart Collection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/manage-collections-assets-view#manage-smart-collection) based on one of the sporting/outdoor themes in the **WKND Shared** folder (e.g., camping, cycling, surfing..).  
 
 3. Using a search engine find a suitable test image for this topic on the internet, with a clear subject (so for 'cycling' chose something with a clear bicycle). 
 
@@ -150,13 +155,12 @@ You can share a collection, folder or individual asset as a secure link — usef
 
       <img alt="" src="assets/share_link.png" width="240"/>
 
-2. Copy the link from the link share dialog, and note that the link has a unique ID.  It is not just a simple path to the entity that you shared, and does have an expiry time which you can set at this point.
+2. Copy the link from the link share dialog, and note that the link has a unique ID.  It is not just a simple path to the entity that you shared, and does have an expiry time which you can set at this point.  
+
+3.  Click the **Close button.**
 
 3. Open an incognito window, or a different browser in which you are **NOT logged in** with an Adobe account.  
 
-4. Paste the shared link into the address bar.  Notice the link is to an author URL such as: ```https://author-p123456-e123456.adobeaemcloud.com/linkshare.html?sh=_long_unique_id```, and all content on an author instance would normally require authentication.
+4. Paste the copied link into the address bar to view the shared image in the Link Share viewer.  Here you can download the image if you wish.
 
-5. Click return and see that image is visible and can be downloaded by your simulated **unauthenticated user** in the Link Share viewer
-
-      <img alt="" src="assets/linkshare.png" width="340"/>
-
+> Notice that you are accessing an asset on a **protected** AEM Authoring environment, but as an anonymous user!  The Link Share mechanism has provided temporary access to an asset without the requirement to publish. 

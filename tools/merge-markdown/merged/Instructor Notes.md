@@ -3,7 +3,7 @@ title: Instructor Guide notes
 subtitle: Working with AEM Assets View
 ---
 
-Last auto-generated 12/24/2025  by [merge-markdown](https://github.com/knennigtri/merge-markdown).
+Last auto-generated 1/9/2026  by [merge-markdown](https://github.com/knennigtri/merge-markdown).
 
 ### Expected Environment Requests
 
@@ -34,7 +34,7 @@ If you have previously run the training on your instance:
 
 There are some minor 'challenges' in the activities file.  Solutions:
 
-#### Activity:  Metadata challenge
+#### Challenge: Mixed MIME Types and Metadata Forms
 
 Key is that the students cannot use a custom image-specific metadata profile with any folder that contains both PDFs and images.  They can do this by creating a separate PDF specific folder, so:
 
@@ -49,8 +49,8 @@ Two easy ways (as of Dec 25) are:
 - click on the ellipsis of an image in the results and choose **Show file location**
 - look at the URL in the browser address bar.
 
-### Challenge: Being Smart!
+#### Challenge: Being Smart!
 
-There's nothing complex here, it's just not guided in the same way as the normal exercises.
+There's mostly nothing complex here, it's just not guided in the same way as the normal exercises, including the use of Smart Tags which we don't cover in the presentation (there are links to documentation in the activity guide).
 
-At the end though is a "bonus question" - how to remove images from a Smart Collection.  Answer: basically you can't! The only way is to change the metadata/tags/name of unwanted images so that they don't show.  In most situations changing a source image in this way, for anyone but the librarion, would be **bad**! 
+At the end though is a "bonus question" - how to remove images from a Smart Collection.  Answer: basically you can't! The only way is to change the metadata/tags/name of unwanted images so that they are not found in the search.  In most situations changing a source image in this way, for anyone but the image owner or librarian, would be **very poor practice**, particularly in a CSC deployment. 

@@ -1,7 +1,7 @@
 ---
 title: Working with AEM Assets View
 author: Rob Freeman
-date: 12/24/2025
+date: 1/9/2026
 creator: Adobe Digital Learning Services
 subject: Instructor Led Training
 ---
@@ -16,7 +16,7 @@ subject: Instructor Led Training
 <div class="page-break"></div>
 
 <div class="copyright">
-©2025 Adobe. All rights reserved.
+©2026 Adobe. All rights reserved.
 </br></br>
 Working with AEM Assets View
 </br></br>
@@ -36,7 +36,7 @@ Adobe, 345 Park Avenue, San Jose, California 95110, USA.
 </br></br>
 Notice to U.S. Government End Users. The Software and Documentation are “Commercial Items,” as that term is defined at 48 C.F.R. §2.101, consisting of “Commercial Computer Software” and “Commercial Computer Software Documentation,” as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §§227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright laws of the United States. Adobe agrees to comply with all applicable equal opportunity laws including, if appropriate, the provisions of Executive Order 11246, as amended, Section 402 of the Vietnam Era Veterans Readjustment Assistance Act of 1974 (38 USC 4212), and Section 503 of the Rehabilitation Act of 1973, as amended, and the regulations at 41 CFR Parts 60-1 through 60-60, 60-250, and 60-741. The affirmative action clause and regulations contained in the preceding sentence shall be incorporated by reference.
 </br></br></br></br>
-<div class="last-updated">12/24/2025</div>
+<div class="last-updated">1/9/2026</div>
 </div>
 <div class="page-break"></div>
 
@@ -94,13 +94,14 @@ In this module, you will practice the basic usage of the Assets View interface, 
 1. Open *Experience Manager Assets* from the chocolate bar menu.
 
 2. Navigate to *Asset Management \> Assets \> WKND Shared \> English \> Training Assets* and use the **Create Folder** button to create a folder using your first name and an initial, if necessary, e.g., _RobF_.
+
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image2.jpeg" width="480"/>
 
-3. **Drag and drop** the exercise image from the *Exercise_Files* folder on to your newly created folder. The _Upload Files_ modal dialog appears.
+3. **Drag and drop** the image _landscape_image_metadata_test.jpg_ from the **activity-files** folder (shared with you by your instructor) on to your newly created folder. The _Upload Files_ modal dialog appears.
 
-4. Leave the checkbox _Publish to AEM and Dynamic Media_ **unchecked**.  
+4. Leave the checkbox _Publish to AEM and Dynamic Media_ **unchecked** and click **upload**.  
 
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/upload.png" width="357"/>
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/upload.png" width="357"/>
 
 5. A green bar and success message is shown if the upload was successful, and a placeholder image should be shown shortly afterwards with a ***Processing*** label. The asset is being processed by AEM as a Cloud Service *Asset Microservices*. **Be patient** - this process can take more than a minute to complete.
 
@@ -108,13 +109,15 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image6.png" width="357"/>
 
+> In the next step you may see an error page when you try to access Adobe Express. If so refresh the page (Cmd + R or Ctrl + R) then log in again using the same VLab user.  At the time of writing the integration with Express is not perfect!
+
 7. Choose **Edit**. A limited version of **Adobe Express** will open. **Make any change**, such as cropping your image.
 
 8. Click **Save** As, then **Version**.
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image7.png" width="480"/>
 
-9. Image processing starts, as happened when you first uploaded the image. Click the **back arrow** to the folder.
+9. Image processing starts, as happened when you first uploaded the image. Click the **back arrow** shown below to return to the folder.
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image8.png" width="244"/>
 
@@ -122,7 +125,7 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 1. Once processing has completed, **double-click on the asset** to open it and click the 'Versions' (clock) icon in the right toolbar.
 
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image9.png" width="321"/>
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/image9.png" width="321"/>
 
 2. Select a previous version (the original).  The image area now shows the side-by-side comparison tool.  Use this to inspect the changes made in Adobe Express.
 
@@ -155,7 +158,7 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 #### Publish 
 
-1. Open the test image by double clicking on it.
+1. If not already open from the previous exercise, open the test image __detail view__ again. 
 
 2. Use the **Switch View** link to change to the same image in the **Admin View** ('traditional' Experience Manager).
 
@@ -175,23 +178,23 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
 6. In the Experience Manager editor use the **switch view** to move from Admin View back to Assets View.
 
-7. Navigate to the containing folder (_Training Assets_, select the image and click **publish** in the blue actions bar.
+7. Navigate to the containing folder, select the image and click **publish** in the blue actions bar.
 
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publish.png" width="480"/>
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publish.png" width="480"/>
 
 8. Select the _AEM_ checkbox in the modal dialog and **publish**.  A green notification panel will confirm that the image was published.
 
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publish_modal.png" width="380"/>
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publish_modal.png" width="380"/>
 
-9. Once again enter the publish instance URL for the image in a new tab (the URL is **similar** to below).  This time there will be no _Not Found_ error and the published image will either open, or download.
+9. Once again enter the publish instance URL for the image in a new tab (the URL is **similar** to below).  This time there will be no _Not Found_ error and the published image will either open, or **download**.
 
    ```
    https://publish-p123456-e123456.adobeaemcloud.com/content/dam/wknd-shared/en/Training%20Assets/yourfolder/landscape_image_metadata_test.jpg
    ```
 
-10. Open the details panel of the test image and scroll to the bottom of the panel.  Note that the publish state and publishing time of the asset is shown.
+10. in Assets View, open the details panel of the test image and scroll to the bottom of the panel.  Note that the publish state and publishing time of the asset is shown.
 
-    <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publishdata.png" width="380"/>
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/publishdata.png" width="380"/>
 
 > The publish mechanism creates a copy of the asset on the Experience Manager publish server, and optionally 
 > to the Dynamic Media delivery server.  
@@ -201,11 +204,15 @@ In this module, you will practice the basic usage of the Assets View interface, 
 > We do not **approve** images in this exercise as we are not using one of the new delivery channels (Content Hub or the Dynamic Media API).
 > Approval is a metadata field that only becomes relevant when using these systems.
 
-#### Review Published Renditions
+#### Review Dynamic Renditions
 
 11. Once again look at the Dynamic Renditions of the image.  You will not see that you can copy the live URL of each rendition - click on **Copy URL** to do this and paste into a browser to view the image.
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/dynamic_renditions_published.png" width="480"/>
+
+> Note that the Dynamic Rendition URLs are not the same as the AEM published image that we saw earlier.  Instead they are URLs for a Dynamic Media server, including a URL modifier to request the required dynamic rendition.  For example ```https://s7g10.scene7.com/is/image/ADLSEMEA/landscape_image_metadata_test:Medium```shows the _Medium_ rendition.
+
+> The training AEM instance will publish assets to Dynamic Media by default, whenever an AEM publish action is triggered.
 
 #### Delete and Restore 
 
@@ -213,18 +220,19 @@ In this module, you will practice the basic usage of the Assets View interface, 
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/delete_image.png" width="240"/>
 
-> In Admin View (Touch UI) delete is a final operation.  Without the restoration of a backup this cannot be undone.
-> Assets View is different and has a Trash folder. Images deleted using Assets View can be restored. 
+> In Admin View (Touch UI) delete is a final operation.  Without the restoration of a backup this cannot be undone. Assets View is different and has a Trash folder. Images deleted using Assets View can be restored. 
 
-2. As only asset and folder titles are visible in the Trash tile view, it can be difficult to find an image if there are others, as is likely the case if your fellow students have also deleted their test images.  To overcome this, change to the **list view** as shown below:
+2. Open the **Trash** folder using the Trash Can icon in the Assets View main menu (Assets Managenent \> Trash).
+
+3. As only asset and folder titles are visible in the Trash tile view, it can be difficult to find an image if there are others, as is likely the case if your fellow students have also deleted their test images.  To overcome this, change to the **list view** as shown below:
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/trash_tileview.png" width="480"/>
 
-3. Locate your deleted image, click the ellipsis and then **restore**.
+4. Locate your deleted image, click the ellipsis and then **restore**.
 
     <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m1-introduction/assets/restore_image.png" width="220"/>
 
-4. Check your folder to be sure that the image was restored.
+5. Check your folder to be sure that the image was restored.
 
 
 
@@ -255,71 +263,61 @@ In this module, you will:
 
 ### Activity 2-1:  Access Metadata
 
-1. In the Assets View UI click the information icon in the details panel of your image, inspect the **metadata** in the *Basic* and *Advanced* tabs.  The metadata fields you see are the defaults provided by Adobe, and reveal commonly used information such as the image description.
+1. In the Assets View UI, open your test image details and view the information panel.Inspect the **metadata** in the *Basic* and *Advanced* tabs.  The metadata fields you see are the defaults provided by Adobe, and reveal commonly used information such as the image description.
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/info.png" width="320"/>
 
-2. The image has much more metadata that you do not currently see.  You can see **some** of this 'hidden' metadata by inspecting the source image in the activity-files.  Do the following:
+2. The image has much more metadata that you do not currently see. You can see **some** of this 'hidden' metadata by inspecting the _landscape_image_metadata_test.jpg_ image in the **activity-files** shared by your instructor.  Do the following:
    - In MacOS right-click on the image and click on **Get info** (result as in the screenshot below)
    - In Windows 11, right-click, then choose **Properties**, then **Details**.
    You will see the following:
 
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/metadata.png" width="400"/>
 
-   > The reason you only see part of the metadata is because Adobe, and the system administrator, have applied **Metadata Forms**, so defining which metadata fields are visible and editable in the Assets View user interface (these Metadata Forms are the equivalent of Metadata Schemas in Admin View).
-   > By changing the Metadata Forms applied to folders and MIME types, different metadata can be shown and edited, as required for the asset management in your company.
+> The reason you only see part of the metadata is because Adobe, and the system administrator, have applied **Metadata Forms**, so defining which metadata fields are visible and editable in the Assets View user interface (these Metadata Forms are the equivalent of Metadata Schemas in Admin View).
+
+> By changing the Metadata Forms applied to folders and MIME types, different metadata can be shown and edited, as required for the asset management in your company.
 
 ### Activity 2-2: Apply Metadata Forms
 
-1. From the left menu, select **Settings** > **Metadata Forms**. You may see an empty page if only the default configurations are used as these defaults are invisible in the UI. You can see the defaults by either:
+1. Leave the image details view, and from Assets View main menu, select **Settings** \> **Metadata Forms**. 
 
-    - View the metadata in the details of an asset as we did in the previous
-      exercise.
+2. In the Metadata Forms panel, click **Create**, then enter *yourinitials_form* in the Name field of **Create Metadata Form** panel, eg., _js_form_.
 
-    - Create a new form using an existing form structure as the template.  Although this is **normally a power user or administrator responsibility**, we'll do that now:
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/create_form_js_form.png" width="245"/>  
 
-2. In the Metadata Forms panel, click **Create**, then enter *\<your initials\>_default* in the Name field of **Create Metadata Form** panel, eg., _js_default_.
+3. Select the **checkbox** *use existing form structure as template* and the select *default* in the **Choose from** field. Click **Create**. The Metadata Form Editor is loaded. The fields shown are copied from the *default* form.
 
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/new_form.png" width="245"/>  
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/image17.png" width="580"/>  
 
-   (if you were to name the new form _default_ you would override the standard default form - **DON'T do that** in this exercise. The default is applied to any assets that do not have forms specific to their MIME types).
-
-3. Select the **checkbox** *use existing form structure as template* and the select *default* in the **Choose from** field. Click **Create**.
-
-4. The Metadata Form Editor is loaded. The fields shown are copied from the standard *default* form.
-
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/image17.png" width="602"/>  
-
-5. We will make the metadata property _photoshop:City_ visible and editable in Assets View (photoshop:City is an Adobe metadata field that could conceivably be important for your company, as the location where the image was created or edited, however we are using it merely as an example without a defined use-case!).  Add a single-line text field to the bottom of the form, then configure the form using:
+4. We will make the metadata property _photoshop:City_ visible and editable in Assets View (photoshop:City is an Adobe metadata field that could conceivably be important for your company, as the location where the image was created or edited, however we are using it merely as an example without a defined use-case!).  Add a single-line text field to the bottom of the form, then configure the form using:
 
    - Metadata property: City (photoshop:City)
    - Label: Photoshop City
 
-      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/metadatacity.png" width="602"/>
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/metadatacity.png" width="580"/>
 
-6. Click **Save**, wait for a success message, then **Close** to exit the form editor.
+5. Click **Save**, wait for a success message, then **Close** to exit the form editor.
 
-7. As your form is named neither *default* nor a MIME type, it will not be used anywhere yet.
+6. Now assign your form to your folder in Training Assets by clicking **Assign to Folders** in the blue header bar, then selecting **your folder** and clicking **Assign**.
 
-   > A MIME type simply tells the system what kind of file an asset is, which determines what metadata can be stored and used—for example, PNG and JPG images have image-related metadata (like dimensions or color profile), while a PDF has document-related metadata (like pages, text, and author).
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/assign.png" width="580"/>
 
-8. Now assign your form to your folder in Training Assets by clicking **Assign to Folders** in the blue header bar, then selecting **your folder** and clicking **Assign**.
+7. Navigate to your folder and open the training image detail view to see the metadata. Your modified metadata form has been applied and the field Photoshop City should now be visible, contain _Offenburg_ and be editable.  
 
-   <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/assign.png" width="602"/>
+8. Return to your folder and upload in to your folder the **test.pdf** file in your activity files (you do not need to publish this so can leave the _Publish to AEM_ checbox **unchecked** when uploading).
 
-9. Open your training asset detail. Your modified metadata form has been applied and the field Photoshop City should now be visible, contain _Offenburg_ and be editable.  
-
-10. Return to your folder and upload in to your folder the **test.pdf** file in your Exercise_Files.
-
-11. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specific, metadata form.  An example issue is that photoshop:City is irrelevant for a PDF.
+9. After the asset has been processed open the details view and note that your **custom metadata form** is being used, This may not be desirable as a PDF is a different MIME type to an image, and by default has a different, PDF specific, metadata form.  An example issue is that photoshop:City is irrelevant for a PDF.
 
 #### Challenge:  Mixed MIME types and Metadata Forms 
 
-1. Solve this problem of the PDF file having the metadata configuration of an image.  Your PDF and your Image should be able to exist inside your folder or child-folder(s), but with different, MIME-type appropriate, metadata fields.  The PDF should have the default PDF metadata visible, and the image should have your custom metadata visible.
+The PDF file you uploaded in the previous exercise has the wrong metadata form applied and you should solve this problem.  
 
-   > Hints:
-   > - The name of the default Metadata Form for a PDF form is _application_. 
-   > - Key point: you cannot apply multiple Metadata Forms to a folder.
+Your PDF and your Image should be able to exist inside your folder or child-folder(s), but with different, MIME-type appropriate, metadata fields.  The PDF should have the default PDF metadata visible, and the image should have your custom metadata visible.
+
+> Hint: Assets does not support the assignment of multiple Metadata Forms to a folder, and assigned forms override any MIME type specific forms.
+> Hint: the _Move_ function in the action menu can be used to move assets between folders.  On smaller screens it is folded into the elipsis menu.
+      <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m2-metadata_search/assets/move.png" width="200"/>
 
 ### Activity 2-3: Search
 
@@ -374,7 +372,7 @@ In this module, you’ll explore productivity tools available in **Assets View**
 
 ### Activity 3-1: My Workspace and Quick Access
 
-The **My Workspace > Quick Assets** panel in Assets View gives you quick access to the assets and folders you use most frequently. You can “pin” items to this view so they are always visible when you sign in.
+The **Quick Access** panel of **My Workspace** gives you quick access to the assets and folders you use most frequently. You can “pin” items to this view so they are always visible when you sign in.
 
 1. From the left navigation, select **My Workspace** to open your personalized workspace.  Notice the _Quick Access_ panel, which will probably be empty.
 
@@ -402,7 +400,7 @@ The **My Workspace > Quick Assets** panel in Assets View gives you quick access 
 
 8. Once again choose to pin **For Myself** and then view the results in your Quick Access area (_My Workspace > Quick Access_).
 
-> *Pinning assets _For Myself_ is similar to the _lightbox_ functionality of the older Admin View assets interface*
+> Pinning assets _For Myself_ is similar to the _lightbox_ functionality of the older Admin View assets interface
 
 ### Activity 3-2: Use Notifications to Track Asset Activity
 
@@ -410,7 +408,7 @@ You can receive notifications whenever assets you care about are updated, publis
 
 1. Navigate to the *Training Assets* folder.
 
-2. (Tip:  Read the next step before completing this one!) Select one or more of your fellow students' folders (for example, *RobF*) and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
+2. (Tip:  Read the next step before completing this one!) Select one or more of your fellow students' folders and in the blue actions bar choose **Watch**.  If you don't see the _Watch_ link, show hidden items by clicking the ellipsis at the end of the bar a shown in the screenshot below.
    
       <img alt="screenshot of exercise" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watch.png" width="480"/>
    
@@ -428,7 +426,7 @@ You can receive notifications whenever assets you care about are updated, publis
 
 6. Close the tab containing the notifications settings, so returning to the Assets View UI.
 
-7. Click the **Watched Assets** link in the left menu bar.  Select the watched folder to see a list of your watches.
+7. Click the **Watched Assets** link in the left menu bar to see a list of your watches.
 
       <img alt="watched assets" src="/home/runner/workspace/cli/modules/m3-productivity/assets/watched_assets.png" width="220"/>
 
@@ -461,7 +459,7 @@ In this activity, you’ll open the Insights view and review the available chart
 
 Collections let you group related assets — for example, all images you plan to use in an upcoming campaign — without moving the original files.
 
-1. We'll start by creating an empty Collection.  Click on the Collections icon in the sidebar, then **Create a Collection**.  Give you collection a simple name such as _your-initials-_Collection, select the **private** open and click **Create**.
+1. We'll start by creating an empty Collection.  Click on the Collections icon in the sidebar, then the **Create Collection** button.  Give you collection a simple name such as _your-initials-_Collection, select the **private** open and click **Create**.
 
       <img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/create_collection.png" width="420"/>
 
@@ -480,27 +478,32 @@ Collections let you group related assets — for example, all images you plan to
 
 #### Investigate collection permissions
 
-1. As you create a **private** collection, you can control the access rights to your collection.  To do this view your Collection in the Collections panel, and choose **Manage permissions** from the ellipsis menu.
+1. As you created a **private** collection, you can control the access rights to it.  To do this view your Collection in the Collections panel, and choose **Manage permissions** from the ellipsis menu.
 
       <img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/collections_permissions.png" width="240"/>
 
 2. Note that you have automatically been added as the Collection owner.
 
-3. We won't apply and test permissions in this course, but if you're working with another student, feel free to experiment with the permissions system by assigning permissions to them.  The next section, sharing, may come in useful for this!
+3. Grant access rights to another user by searching for **vlab** in the _Groups & Users_ area, selecting an ADLS user and applying an access permission (click on the *+* button).
+
+      <img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/grant_access.png" width="340"/>
 
 #### Challenge: Being Smart!
 
-In this small challenge we will try out Smart Collections and Smart Tagging.    
+In this small challenge we will try out Smart Collections and Smart Tagging.  
 
-1. Create a [Smart Collection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/manage-collections-assets-view#manage-smart-collection) bnased on one of the sporting/outdoor themes in the **WKND Shared** folder (e.g., camping, cycling, surfing..).  
+> If you need help, try out the AI Assistant by clicking on the speech bubble icon in the header. 
+<img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/ai_assistant.png" width="580"/>
+
+1. Create a [Smart Collection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/manage-collections-assets-view#manage-smart-collection) based on one of the sporting/outdoor themes in the **WKND Shared** folder (e.g., camping, cycling, surfing..).  
 
 3. Using a search engine find a suitable test image for this topic on the internet, with a clear subject (so for 'cycling' chose something with a clear bicycle). 
 
-4. Test your collection and [Smart Tagging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/smart-tags) by **uploading a screenshot** of the test image in to **your folder** in Training Asset (the screenshot hack will ensure that the test image has no topic-specififc metadata or naming).
+4. Test your collection and [Smart Tagging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/smart-tags) by **uploading a screenshot** of the test image in to **your folder** in Training Asset (the screenshot hack will ensure that the test image has no topic-specific metadata or naming).
 
 Has your image been added to your Smart Collection?  Is the metadata-less image now included?
 
-Bonus question: How can you achieve remove images from the Smart Collection? (don't spend more than a couple of minutes on answering this)
+Bonus question: How can you remove images from the Smart Collection? (don't spend more than a couple of minutes on answering this)
 
 ### Activity 3-5: Sharing links
 
@@ -510,16 +513,15 @@ You can share a collection, folder or individual asset as a secure link — usef
 
       <img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/share_link.png" width="240"/>
 
-2. Copy the link from the link share dialog, and note that the link has a unique ID.  It is not just a simple path to the entity that you shared, and does have an expiry time which you can set at this point.
+2. Copy the link from the link share dialog, and note that the link has a unique ID.  It is not just a simple path to the entity that you shared, and does have an expiry time which you can set at this point.  
+
+3.  Click the **Close button.**
 
 3. Open an incognito window, or a different browser in which you are **NOT logged in** with an Adobe account.  
 
-4. Paste the shared link into the address bar.  Notice the link is to an author URL such as: ```https://author-p123456-e123456.adobeaemcloud.com/linkshare.html?sh=_long_unique_id```, and all content on an author instance would normally require authentication.
+4. Paste the copied link into the address bar to view the shared image in the Link Share viewer.  Here you can download the image if you wish.
 
-5. Click return and see that image is visible and can be downloaded by your simulated **unauthenticated user** in the Link Share viewer
-
-      <img alt="" src="/home/runner/workspace/cli/modules/m3-productivity/assets/linkshare.png" width="340"/>
-
+> Notice that you are accessing an asset on a **protected** AEM Authoring environment, but as an anonymous user!  The Link Share mechanism has provided temporary access to an asset without the requirement to publish. 
 
 
 # Module 4: Dynamic Media Templates

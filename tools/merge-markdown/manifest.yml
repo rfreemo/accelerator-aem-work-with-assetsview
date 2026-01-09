@@ -17,8 +17,8 @@ input:
 noYAML: true
 doctoc: true
 replace:
-  <!--{timestamp}-->: 12/24/2025
-  <!--{copyrightYear}-->: '2025'
+  <!--{timestamp}-->: 1/9/2026
+  <!--{copyrightYear}-->: '2026'
   <!--{returnToMainTOC}-->: '[Return to Course Contents](#course-contents)'
   <!--{courseType}-->: Activity Guide
   <!--{courseTitle}-->: Working with AEM Assets View
